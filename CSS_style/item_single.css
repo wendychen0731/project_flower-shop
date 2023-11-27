@@ -1,0 +1,156 @@
+
+body{
+   background-image: url(/photos/index/white-diamond.png);
+   background-attachment: fixed;
+}
+
+.item {
+    /* border: 1px solid #000; */
+    width: 1400px;
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.item_pic{
+    /* border: 1px solid #000; */
+    width: 700px;
+    height: 570px;
+    display: flex;
+    flex-direction: column;
+}
+.item_mainpic{
+    /* border: 1px solid #000; */
+    width: 670px;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.item_smallpic{
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.item_smallpic img{
+    /* border: 1px solid #000; */
+    width: 170px;
+    height:150px;
+}
+
+.item_smallpic img:first-child{
+   width: 65px;
+   height: 65px;
+}
+.item_smallpic img:last-child{
+    width: 65px;
+    height: 65px;
+ }
+
+ .item_content{
+    /* border: 1px solid #000; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+
+ .item_content_text>h3{
+    width: 650px;
+    height: 60px;
+    background-color: #FFCD84;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 20px;
+ }
+
+ .item_content_text>p{
+    width: 650px;
+   padding-left: 30px;
+   padding-top: 30px;
+ }
+
+ button{
+    background-color: #6FBC6D;
+    color: #fff;
+    font-size: 24px;
+    border: none;
+ }
+
+ .item_btn{
+    /* border: 1px solid #000; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+
+ .item_btn_block{
+   /* border: 1px solid #000; */
+   display: flex;
+
+ }
+
+ .decrease, .increase{
+   /* border: 1px solid #000; */
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+ }
+
+ .item_btn p{
+    font-size: 18px;
+    height: 65px;
+    padding: 0 30px;
+    margin: 0 20px;
+    line-height: 65px;
+    background-color: rgba(202, 219, 193, 0.5);
+ }
+ .buy, .addtocart{
+    height: 65px;
+    padding: 0 20px;
+ }
+
+ .addtocart{
+   border: 3px solid #6FBC6D;
+   background-color: #fff;
+   color: #6FBC6D;
+ }
+
+ .shoppingguide{
+    width: 1400px;
+    margin: 60px auto;
+    border-top: 3px solid #3A8816;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+ }
+ .shoppingguide ul{
+    font-family: 'Klee One';
+    margin-top: 50px;
+    list-style: none;
+    text-indent: 1em;
+    letter-spacing: 1px;
+ }
+
+ .shoppingguide li{
+    /* border: 1px solid #000; */
+    line-height: 40px;
+    list-style-position:initial
+ }
+
+ .shoppingguide li:before{ 
+   content:''; 
+   width:30px; 
+   height:30px; 
+   border-radius:50%; 
+   background-image: url(/photos/icon/list_style.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   display:inline-block; 
+   margin-right:5px; 
+   vertical-align:middle; 
+   margin-top:-3px;
+}

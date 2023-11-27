@@ -1,0 +1,211 @@
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+h4{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+main{
+    /* border: 1px solid #000; */
+    display: flex;
+    flex-direction: column;
+    
+}
+
+h2{
+    text-align: center;
+    margin: 20px 0;
+}
+
+body{
+    position: relative;
+}
+/* 側邊標題區塊 */
+
+.wrap{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.menu{
+    /* border: 1px solid #000; */
+    width: 250px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+}
+
+.menu_title{
+    border: 3px solid #3A8816;
+    width: 250px;
+    margin: auto;
+    border-radius: 20px;
+    padding: 20px;
+    position: sticky;
+    top: 100px;
+    left: 20px;
+}
+.menu a::after{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 3px;
+    background-color: #3A8816;
+    transition: 0.5s;
+}
+
+.menu a:hover::after{
+    width: 80%;
+    transition: 0.5s;
+}
+
+
+/* 主要內容區塊 */
+
+.main_block{
+    /* border: 1px solid #000; */
+    width: 1050px;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: space-between;
+    position: relative;
+    padding: 20px 0;
+    margin-bottom: 40px;
+}
+
+.main_block:nth-child(even){
+    /* border: 1px solid #000; */
+    flex-direction: row;
+    position: relative;
+}
+
+.background>.main_block{
+    flex-direction: row;
+}
+
+
+/* 主要內容照片設定 */
+.main_block_img{
+    /* border: 1px solid #000; */
+    align-self: flex-start;
+    position: relative;
+    top: 172px;
+}
+
+.main_block_img img:first-child{
+    width: 400px;
+    height: 320px;
+}
+
+.main_block_img img:first-child{
+    vertical-align: middle;
+    border-radius: 50% 45% 58% 42%/39% 38% 52% 60%;
+    transition: 0.5s
+}
+
+.main_block_img img:last-child:not(.main_block:nth-child(2) img:last-child){
+    width: 100px;
+    position: absolute;
+    left: -15px;
+    bottom: -15px;
+}
+
+.main_block:nth-child(2) img:last-child{
+    /* border: 1px solid #000; */
+    width: 100px;
+    position: absolute;
+    right: -15px;
+    bottom: -15px;
+}
+
+.main_block_img img:first-child{
+    animation: img 5s 0s ease-in infinite alternate; 
+}
+
+.text_block{
+    /* border: 1px solid #000; */
+    margin: auto;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+@keyframes img{
+    25%{
+        border-radius: 50% 50% 72% 28%/47% 48% 52% 53%;
+    }
+    50%{
+        border-radius: 50% 50% 46% 54%/53% 48% 52% 47%;
+    }
+    100%{
+        border-radius: 50% 50% 33% 67%/65% 56% 44% 35%;
+    }
+}
+
+/* 文字區塊間距及裝飾框線 */
+.text_block h2{
+    margin: 40px auto;
+    width: 250px;
+    text-align: center;
+}
+
+.text_block h2::after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #3A8816;
+}
+
+.text_block h3{
+    margin: 40px 0 20px 0;
+}
+
+
+/* 區塊背景設定 */
+
+.wrap{
+    /* border: 1px solid #000; */
+    background: linear-gradient(
+        #fff 0%,
+        #fff 26%,
+        #E7F1DC 26%,
+        #E7F1DC 64%,
+        #fff 64%,
+        #fff 100%
+    );
+}
+
+.main_block:nth-child(even)>img{
+    /* border: 1px solid #000; */
+    width: 200px;
+    position: absolute;
+}
+
+.main_block:nth-child(even)>img:first-child{
+    top: -40px;
+    right: 0px;
+ 
+}
+
+.main_block:nth-child(even)>img:nth-child(2){
+    /* border: 1px solid #000; */
+    bottom: -140px;
+
+}
+
+.main_block_bgi{
+    position: absolute;
+    bottom: 40px;
+}
+
+.main_block_bgi img{
+    width: 200px;
+}
+

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunlight floral store - 購物車</title>
+    <link rel="stylesheet" href="/CSS_style/normalize.css">
+    <link rel="stylesheet" href="/CSS_style/tempt.css">
+    <link rel="stylesheet" href="/CSS_style/cart.css">
+<!-- 英文字體 marck script -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+<!-- 中文字體-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Klee+One&family=Marck+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+</body>
+    <header>
+<!-- 導覽列 -->
+<nav>
+    <div class="mynav">
+        <div class="logo">
+            <a href="/index.html"><img src="/photos/icon/logo.png" alt="logo"></a>
+        </div>
+        <ul>
+        
+                <li class="mynav_list">
+                    <a href="/item_list.html" target="_blank">
+                        商品列表
+                    <ul class="item_drop">
+                        <li>
+                            <a href="/item_list.html">
+                                花束
+                            </a>
+                        </li>                            
+                        <li>
+                            <a href="/item_list.html">
+                                盆花
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/item_list.html">
+                                永生花
+                            </a>
+                        </li>
+                    </ul>
+                </a>
+                </li>
+            
+            <li class="mynav_list">
+                <a href="/class.html" target="_blank">
+                    花藝課程
+                </a>
+            </li>
+            <li class="mynav_list">
+                <a href="/flowers_knowledge.html"target="_blank">
+                    花藝百科
+                </a>
+            </li>
+        <li class="mynav_list">
+                <a href="/flowers_introduce.html" target="_blank">
+                    常見花材
+                </a>
+            </li>
+        </ul>
+        <div class="mynav_icon">
+            <a href="/cart.html" class="mynav_cart">
+                <img src="/photos/icon/icon_cart.png">
+            </a>
+            <a href="" class="mynav_question">
+                <img src="/photos/icon/icon_question.png">
+            </a>
+            <a href="" class="mynav_member">
+                <img src="/photos/icon/icon_member.png">
+            </a>
+        </div>
+    </div>
+</nav>
+    </header>
+    <main>
+       
+        <h2>購物車</h2>
+        <div class="cart">
+            <div class="title">
+                <ul>
+                    <li>商品資料</li>
+                    <li>單價</li>
+                    <li>數量</li>
+                    <li>小計</li>
+                </ul>
+            </div>
+            <div class="itemarea">
+                <div class="item">
+                    <img src="/photos/item_list/item_list_3.jpg" alt="item_photo">
+                    <p class="item_name">牡丹百合-陶瓶(白)</p>
+                    <p class="item_unitprice"> $1980</p>
+                    <div class="btn_group">
+                        <button class="decrease"><span>-</span></button>
+                        <p class="item_qty">1</p>
+                        <button class="increase"><span>+</span></button>
+                    </div>
+                    <p class="item_total">NT$ 1980</p>
+                    <button class="cancel"><img src="/photos/icon/icon_cross.png" alt="icon"></button>
+                </div>
+                <div class="item">
+                    <img src="/photos/item_list/item_list_6.jpg" alt="item_photo">
+                    <p class="item_name">薰衣草-瓷瓶(白)</p>
+                    <p class="item_unitprice"> $1680</p>
+                    <div class="btn_group">
+                        <button class="decrease">-</button>
+                        <p class="item_qty">1</p>
+                        <button class="increase">+</button>
+                    </div>
+                    <p class="item_total">NT$ 1680</p>
+                    <button class="cancel"><img src="/photos/icon/icon_cross.png" alt="icon"></button>
+                </div>
+            </div>            
+        </div>
+        <div class="info">
+            <div class="info_left">
+                <div class="info_block payment">
+                    <p>付款方式</p>
+                    <select name="payment" id="">
+                        <option value="none" selected disabled hidden>請選擇付款方式</option> 
+                        <option value="" label="貨到付款">貨到付款</option>
+                        <option value="" label="銀行匯款">銀行匯款</option>
+                        <option value="" label="信用卡">信用卡</option>                    
+                    </select>
+                </div>
+                <div class="info_block express">
+                    <p>運送方式</p>
+                    <select name="payment" id="">
+                        <option value="none" selected disabled hidden>請選擇運送方式</option> 
+                        <option value="" label="快遞">快遞</option>
+                        <option value="" label="自取">自取</option>                  
+                    </select>
+                </div>
+                <div class="receiver_block">
+                    <p class="receiver_label">收件人資訊</p>
+                    <p>姓名：</p>
+                    <p>配送地址：</p>
+                    <p>連絡電話：</p>
+                    <p>指定配送時間：</p>
+                    <button>修改收件人資訊</button>
+                </div>
+            </div>
+            <div class="info_right">
+               <div class="order_information">
+                    <p>訂單資訊：</p>
+                    <p>小計：</p>
+                    <p>運費：</p>
+               </div>
+               <div class="order_amount">
+                <p>合計：</p>
+               </div>
+               <button class="bill">結帳</button>
+            </div>
+        </div>        
+    </main>
+
+
+<!-- footer -->
+<footer class="footer">
+    <div class="footer_bg"></div>
+    <div class="footer_main">
+        <div class="footer_title">
+            <h4>Sunlight Floral Shop</h4>
+        </div>
+        <div class="footer_contact">
+            <p>地址: 桃園市中壢區復興路46號</p>
+            <p>電話: 03-123-4567</p>
+            <p>營業時間：</p>
+            <p>每週一 至週六</p>
+            <p>11:00 a.m. ~ 20:30 p.m.</p>
+        </div>
+        <div class="footer_followus">
+            <div class="footer_icon">
+                <a href="" class="footer_fb">
+                    <img src="/photos/icon/icon_fb.png" alt="facebook">
+                </a>
+                <a href="" class="footer_ig">
+                    <img src="/photos/icon/icon_ig.png" alt="intasgram">
+                </a>
+                <a href="" class="footer_line">
+                    <img src="/photos/icon/icon_line.png" alt="line">
+                </a>
+                <a href="" class="footer_twitter">
+                    <img src="/photos/icon/icon_twitter.png" alt="twitter">
+                </a>
+            </div>
+            <a href="#">常見問題</a>
+            <a href="#">聯繫我們</a>
+        </div>
+    </div>
+    <div class="footer_copyright">
+        <p>© Copyright Sunlight floral shop all right reserved.</p>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,224 @@
+main{
+    margin-top: 100px;
+}
+/* 頂部標題樣式 */
+.label{
+    /* border: 1px solid #000; */
+    width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    color:#000;
+}
+
+.label p{
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.label div{
+    /* border: 1px solid #000;  */
+    border-radius: 10px;
+    background-color: #E7F1DC;
+    box-shadow: 5px 5px 6px rgba(200,200,200,0.5);
+}
+
+
+/* 主區域樣式 */
+.introduce_main{
+    /* border: 1px solid #000; */
+    width: 1400px;
+    margin: auto;
+    margin-top: 100px;
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(12, 100px);
+    grid-template-rows: repeat(10,100px);
+    isolation: isolate;
+}
+
+.title_block h3{
+    /* border: 1px solid #000; */
+    width: 300px;
+    font-size: 50px;
+    font-family: 'marck script';
+    text-align: center;
+    color: #B8B8B8;
+    position: absolute;
+    letter-spacing: 2px;
+    right: -150px;
+    top: 10%;
+    z-index: 2;
+    mix-blend-mode: color-dodge;
+}
+
+.block_text{
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+}
+
+.pic_main{
+    /* border: 1px solid red; */
+    overflow: hidden;
+}
+
+.pic_main img,
+.pic_first img,
+.pic_second img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.pic_main img:hover,
+.pic_first img:hover,
+.pic_second img:hover{
+    transform: scale(1.1);
+    overflow: hidden;
+    transition: 0.5s;
+}
+.introduce_main h2{
+    /* border: 1px solid #000; */
+    width: 250px;
+    text-align: center;
+    margin: auto;
+    line-height: 60px;
+    grid-area: 1/9/3/11;
+}
+
+.pic_first{
+    /* border: 1px solid #000; */
+    width: 450px;
+    height: 670px;
+    grid-area: 3/9/10/13;
+    overflow: hidden;
+}
+
+.pic_second{
+    /* border: 1px solid #000; */
+    width: 360px;
+    height: 500px;
+    grid-area:6/5/11/8;
+    position: relative;
+    right: 20px;
+    overflow: hidden;
+}
+
+.text_outward{
+    /* border: 1px solid #000; */
+    width: 400px;
+    height: 120px;
+    grid-area: 7/1/10/5;
+}
+
+.text_flower{
+    /* border: 1px solid #000;  */
+    width: 450px;
+    height: 250px;
+    grid-area: 9/9/13/13;
+}
+
+.introduce_main h2::after{
+    content:"";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #3a8816;
+}
+
+img{
+    vertical-align: middle;
+    background-attachment: fixed;
+}
+
+p{
+    text-align: justify;
+}
+
+.title_block{
+    /* border: 1px solid #000; */
+    width: 700px;
+    position: relative;
+    grid-area: 1/1/7/7;
+}
+
+
+/* 底部區域 */
+.bottom{
+    /* border: 1px solid #000; */
+    width: 1400px;
+    margin: auto;
+    height: 500px;
+    margin-bottom: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom::after{
+    content:"";
+    display: block;
+    width: 140px;
+    height: 200px;
+    /* border: 1px solid #000; */
+    background: url(/photos/flower_introduce/flower_introduce_bottom_tree.png) no-repeat;
+    position: absolute;
+    right: 0px;
+    bottom: -125px;
+    z-index: -1;
+}
+
+.bottom_pic{
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.bottom_pic>img{
+    /* border: 1px solid #000; */
+    vertical-align: middle;
+    height: 290px;
+    width: 450px;
+    margin-top: 20px;
+}
+
+.bottom_text{
+    /* border: 1px solid #000; */
+    width: 80%;
+    display: flex;
+    margin-top: 60px;
+    align-self: center;
+
+}
+
+.bottom_text p{
+    margin-top: 50px;
+    flex-grow: 1;
+}
+
+.bottom_link{
+    border: 1px solid #3A8816;
+    padding: 5px 20px;
+    border-radius: 20px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+}
+
+.bottom_link a{
+    color: #3A8816;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+
