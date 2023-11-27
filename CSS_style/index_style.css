@@ -1,6 +1,6 @@
 
 body{
-    background-image: url(/photos/index/white-diamond.png);
+    background-image: url(./photos/index/white-diamond.png);
     background-attachment: fixed;
 }
 
@@ -12,7 +12,7 @@ body{
     height: 800px;
     background: linear-gradient(110deg, rgba(230,230,230,0.5) 45%,
     transparent 45%) center center,
-    url("/photos/index/index_banner.jpg") right center / auto 100%;
+    url("./photos/index/index_banner.jpg") right center / auto 100%;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -304,14 +304,14 @@ body{
     /* border: 1px solid #000; */
     width: 150px;
     height: 240px;
-    background-image: url(/photos/index/producttyple_text_right.png);
+    background-image: url(./photos/index/producttyple_text_right.png);
     position: absolute;
     right: -80px;
     bottom: 60px;
 }
 .producttype_text_middle>.producttype_text_decoration{
     left: -80px;
-    background-image: url(/photos/index/producttyple_text_left.png);
+    background-image: url(./photos/index/producttyple_text_left.png);
     position: absolute;
     bottom: 50px;
 }
@@ -400,7 +400,7 @@ body{
     width: 100%;
     height: 650px;
     margin-top: 60px;
-    background-image: url(/photos/index/pic_block.jpg);
+    background-image: url(./photos/index/pic_block.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

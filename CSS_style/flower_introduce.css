@@ -167,7 +167,7 @@ p{
     width: 140px;
     height: 200px;
     /* border: 1px solid #000; */
-    background: url(/photos/flower_introduce/flower_introduce_bottom_tree.png) no-repeat;
+    background: url(./photos/flower_introduce/flower_introduce_bottom_tree.png) no-repeat;
     position: absolute;
     right: 0px;
     bottom: -125px;

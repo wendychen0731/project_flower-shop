@@ -191,7 +191,7 @@ main{
     background-color: #fff;
     padding: 40px 0px;
     position: relative;
-    background-image: url(/photos/index/footer_bg.png);
+    background-image: url(./photos/index/footer_bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
