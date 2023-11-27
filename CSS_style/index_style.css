@@ -274,7 +274,7 @@ body{
 .producttype_title{
     /* border: 1px solid #000;  */
     width: 150px;
-    height: 40px;
+    height: 60px;
     background-color: #E7F1DC;
     position: absolute;
     right: -20px;
@@ -290,13 +290,13 @@ body{
     background-color: #808B75;
     position: absolute;
     right: 0px;
-    top: 40px;
+    top: 60px;
 }
 
 .producttype_title_middle{
     /* border: 1px solid #000; */
     width: 150px;
-    height: 40px;
+    height: 60px;
     background-color: #E7F1DC;
     position: absolute;
     left: -20px;
@@ -311,13 +311,13 @@ body{
     background-color: #808B75;
     position: absolute;
     left: 0px;
-    top: 40px;
+    top: 60px;
 }
 
 .producttype_title>h3, .producttype_title_middle>h3{
     /* border: 1px solid #000; */
     text-align: center;
-    line-height: 40px;
+    line-height: 60px;
 }
 
 
@@ -520,6 +520,7 @@ body{
 h2{
     /* border: 1px solid #000; */
     text-align: center;
+    line-height: 60px;
 }
 
 .aboutus_text h2:nth-child(2),
