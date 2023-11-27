@@ -187,20 +187,20 @@ main{
 /* footer */
 .footer{
     /* border: 1px solid #000; */
-    border-top: 1px solid #b8b4b4;
-    background-color: #fff;
+    background-color: #4FAE4F;
     padding: 40px 0px;
     position: relative;
-    background-image: url(./photos/index/footer_bg.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1400px 1400px 0% 0%/400px 400px 0% 0%;
+    
 }
+
 
 .footer_title{
     /* border: 1px solid #000; */
     width: 30.3333%;
-    border-right: 2px solid #000;
+    border-right: 2px solid #fff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -212,13 +212,14 @@ main{
     height: 300px;
     justify-content: space-between;
     padding: 0 40px;
+    
 }
 
 
 
 .footer_followus{
     /* border: 1px solid #000; */
-    border-left: 2px solid #000;
+    border-left: 2px solid #fff;
     padding-left: 40px;
     display: flex;
     flex-direction: row-reverse;
@@ -242,7 +243,7 @@ main{
 }
 
 .footer p, .footer_followus a, .footer h4{
-    color: #000;
+    color: #fff;
     font-family: '微軟正黑體';
     line-height: 40px;
     text-align: left;
