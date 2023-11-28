@@ -78,53 +78,35 @@ body{
     margin-bottom: 40px;
 }
 
+
+
 .main_block:nth-child(even){
     /* border: 1px solid #000; */
     flex-direction: row;
     position: relative;
 }
 
-.background>.main_block{
-    flex-direction: row;
-}
-
-
 /* 主要內容照片設定 */
 .main_block_img{
-    /* border: 1px solid #000; */
+    border: 1px solid #4FAE4F;
     align-self: flex-start;
     position: relative;
     top: 172px;
+    border-radius: 50% 45% 58% 42%/39% 38% 52% 60%;
+    animation: img 2s 2s linear infinite alternate; 
 }
 
 .main_block_img img:first-child{
     width: 400px;
     height: 320px;
-}
-
-.main_block_img img:first-child{
     vertical-align: middle;
     border-radius: 50% 45% 58% 42%/39% 38% 52% 60%;
     transition: 0.5s
 }
 
-.main_block_img img:last-child:not(.main_block:nth-child(2) img:last-child){
-    width: 100px;
-    position: absolute;
-    left: -15px;
-    bottom: -15px;
-}
-
-.main_block:nth-child(2) img:last-child{
-    /* border: 1px solid #000; */
-    width: 100px;
-    position: absolute;
-    right: -15px;
-    bottom: -15px;
-}
 
 .main_block_img img:first-child{
-    animation: img 5s 0s ease-in infinite alternate; 
+    animation: img 4s 0s ease-in infinite alternate; 
 }
 
 .text_block{
@@ -147,7 +129,6 @@ body{
         border-radius: 50% 50% 33% 67%/65% 56% 44% 35%;
     }
 }
-
 /* 文字區塊間距及裝飾框線 */
 .text_block h2{
     margin: 40px auto;
@@ -174,8 +155,8 @@ body{
     /* border: 1px solid #000; */
     background: linear-gradient(
         #fff 0%,
-        #fff 26%,
-        #E7F1DC 26%,
+        #fff 25%,
+        #E7F1DC 25%,
         #E7F1DC 64%,
         #fff 64%,
         #fff 100%
@@ -196,13 +177,14 @@ body{
 
 .main_block:nth-child(even)>img:nth-child(2){
     /* border: 1px solid #000; */
-    bottom: -140px;
+    bottom: -160px;
 
 }
 
 .main_block_bgi{
     position: absolute;
-    bottom: 40px;
+    bottom: -80px;
+    right: 60px;
 }
 
 .main_block_bgi img{

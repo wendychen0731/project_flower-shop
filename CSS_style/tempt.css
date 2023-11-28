@@ -52,7 +52,6 @@ button{
     font-size: 24px;
     font-family: 'Klee One';
     border: none;
-    letter-spacing: 8px;
 }
 
 
@@ -98,15 +97,16 @@ main{
 .mynav_list::after{
     content:"";
     display: block;
-    height: 2px;
-    width: 0%;
-    background-color: #000;
-    transition: 0.3s
+    height: 3px;
+    width: 100%;
+    background-color: #4FAE4F;
+    transition: 0.3s;
+    transform: scaleX(0)
 }
 
 .mynav_list:not(.mynav_list:first-child):hover::after{
-    width: 100%;
     transition: 0.3s;
+    transform: scaleX(1)
     
 }
 
@@ -192,7 +192,7 @@ main{
     position: relative;
     display: flex;
     flex-direction: column;
-    border-radius: 1400px 1400px 0% 0%/400px 400px 0% 0%;
+    border-radius: 900px 900px 0% 0%/140px 140px 0% 0%;
     
 }
 
