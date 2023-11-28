@@ -41,12 +41,21 @@ body{
     position: absolute;
     top: 0;
     right: 0;
-    animation: banner2 18s 0s cubic-bezier(.22,.6,.75,.57) infinite ;
+    animation: banner2 18s 0s cubic-bezier(.22,.6,.75,.57) infinite;
+    z-index: 10;
 }
 .banner>img:nth-child(3){
     position: absolute;
     top: 200px;
     left: 100px;
+}
+
+.banner>img:nth-child(4){
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    animation: banner3 20s .5s ease-in-out infinite;
+    z-index: 10;
 }
 
 
@@ -75,11 +84,38 @@ body{
         right: 20%;
     }
     40%{
-        top: 10px;
+        top: 60px;
         right: 40%;
     }
     60%{
         top: -50px;
+        right: 60%;
+    }
+    80%{
+        top: 30px;
+        right: 80%;
+    }
+    100%{
+        top: 0;
+        right: 100%;
+    }
+}
+
+@keyframes banner3{
+    0%{
+        top: 30px;
+        right: 40px;
+    }
+    20%{
+        top: -10px;
+        right: 20%;
+    }
+    40%{
+        top: 20px;
+        right: 40%;
+    }
+    60%{
+        top: -20px;
         right: 60%;
     }
     80%{
@@ -177,17 +213,20 @@ body{
 
 .aboutus_pic img{
     transition: 1s;
+    vertical-align: middle;
 }
 
 .aboutus_pic img:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
+
 
 
 /* 關於我們 文字 */
 .aboutus p{
     /* border: 1px solid #000; */
     width: 320px;
+    text-align: justify;
 }
 
 .aboutus h3{

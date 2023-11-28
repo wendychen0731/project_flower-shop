@@ -5,7 +5,6 @@ body{
 }
 
 .item {
-    /* border: 1px solid #000; */
     width: 1400px;
     margin: auto;
     margin-top: 60px;
@@ -14,14 +13,12 @@ body{
 
 }
 .item_pic{
-    /* border: 1px solid #000; */
     width: 700px;
     height: 570px;
     display: flex;
     flex-direction: column;
 }
 .item_mainpic{
-    /* border: 1px solid #000; */
     width: 670px;
     height: 360px;
     display: flex;
@@ -29,7 +26,6 @@ body{
 }
 
 .item_smallpic{
-    /* border: 1px solid #000; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,22 +33,20 @@ body{
 }
 
 .item_smallpic img{
-    /* border: 1px solid #000; */
     width: 170px;
     height:150px;
 }
 
-.item_smallpic img:first-child{
-   width: 65px;
-   height: 65px;
+
+/* 箭頭icon */
+.item_smallpic img:first-child,
+.item_smallpic img:last-child,
+.otheritem>ul>img{
+   width: 30px;
+   height: 30px;
 }
-.item_smallpic img:last-child{
-    width: 65px;
-    height: 65px;
- }
 
  .item_content{
-    /* border: 1px solid #000; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -68,33 +62,47 @@ body{
  }
 
  .item_content_text>p{
-    width: 650px;
+   width: 650px;
+   font-size: 24px;
    padding-left: 30px;
    padding-top: 30px;
  }
 
  button{
-    background-color: #6FBC6D;
+    background-color: #4FAE4F;
     color: #fff;
     font-size: 24px;
     border: none;
  }
 
  .item_btn{
-    /* border: 1px solid #000; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
  }
 
+ .item_btn>div:last-child{
+   width: 380px;
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .item_btn>div:last-child>button{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .item_btn>div:last-child>button>img{
+   padding-right: 10px;
+ }
+
  .item_btn_block{
-   /* border: 1px solid #000; */
    display: flex;
 
  }
 
  .decrease, .increase{
-   /* border: 1px solid #000; */
     width: 65px;
     height: 65px;
     border-radius: 50%;
@@ -114,29 +122,32 @@ body{
  }
 
  .addtocart{
-   border: 3px solid #6FBC6D;
+   border: 3px solid #4FAE4F;
    background-color: #fff;
-   color: #6FBC6D;
+   color: #4FAE4F;
  }
 
- .shoppingguide{
-    width: 1400px;
+ /* 備註區塊 */
+
+ .shoppingguide, .otheritem{
     margin: 60px auto;
     border-top: 3px solid #4FAE4F;
-    padding-top: 60px;
+    padding: 40px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
  }
+
+
  .shoppingguide ul{
     font-family: 'Klee One';
     margin-top: 50px;
     list-style: none;
-    text-indent: 1em;
     letter-spacing: 1px;
  }
 
  .shoppingguide li{
-    /* border: 1px solid #000; */
+   text-indent: 10em;
     line-height: 40px;
     list-style-position:initial
  }
@@ -154,3 +165,12 @@ body{
    vertical-align:middle; 
    margin-top:-3px;
 }
+
+/* 相似產品 */
+.otheritem>ul{
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   margin-top: 60px;
+}
+

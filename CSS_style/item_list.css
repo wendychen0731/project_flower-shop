@@ -8,7 +8,6 @@ body{
 .title{
     /* border: 1px solid #000; */
     margin: auto;
-    margin-top: 60px;
     margin-bottom: 100px;
     width: 1310px;
     position: relative;
@@ -77,10 +76,10 @@ body{
 
 @keyframes title_border{
     0%{
-        border-bottom: 0px solid #3A8816;
+        border-bottom: 0px solid #4FAE4F;
     }
     100%{
-        border-bottom: 3px solid #3A8816;
+        border-bottom: 3px solid #4FAE4F;
 }
 }
 
@@ -106,7 +105,7 @@ body{
 }
 
 .itemlist_side{
-    border: 3px solid #3A8816;
+    border: 3px solid #4FAE4F;
     border-radius: 20px;
     width: 230px;
     height: 300px;
@@ -129,7 +128,7 @@ body{
     display: block;
     width: 0%;
     height: 3px;
-    background-color: #3A8816;
+    background-color: #4FAE4F;
     transition: 0.5s;
 }
 
