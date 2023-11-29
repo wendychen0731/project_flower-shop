@@ -195,7 +195,6 @@ nav{
 
 .footer_main{
     display: flex;
-    height: 300px;
     justify-content: space-between;
     padding: 0 40px;
     
