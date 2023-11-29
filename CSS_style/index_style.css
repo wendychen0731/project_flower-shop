@@ -449,7 +449,7 @@ img{
     overflow: hidden;
     position: absolute;
     /* background-color: rgba(51, 110, 51, 0.4); */
-    background-color: rgba(79,174,79,.3);
+    background-color: rgba(0,0,0,.3);
     backdrop-filter: blur(8px);
     /* 在區塊背景加入特效 */
     top: 0;
