@@ -448,7 +448,10 @@ img{
     height: 0;
     overflow: hidden;
     position: absolute;
-    background-color: rgba(51, 110, 51, 0.4);
+    /* background-color: rgba(51, 110, 51, 0.4); */
+    background-color: rgba(79,174,79,.3);
+    backdrop-filter: blur(8px);
+    /* 在區塊背景加入特效 */
     top: 0;
     left: 0;
     transition: .8s;
