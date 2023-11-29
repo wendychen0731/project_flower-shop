@@ -8,7 +8,6 @@ body{
 
 /* banner */
 .banner_container{
-    /* border: 1px solid #000; */
     height: 600px;
     width: 1100px;
     margin: auto;
@@ -130,7 +129,6 @@ body{
 
 
 .banner_text{
-    /* border: 1px solid #000; */
     font-size: 28px;
     margin: auto;
     margin-left: 5%;
@@ -140,14 +138,12 @@ body{
 }
 
 .banner_text p{
-    /* border: 1px solid #000; */
     font-size: 32px;
     width: 300px;
     padding-bottom: 5px;
 }
 
 .banner_text p::after{
-    /* border: 1px solid #000; */
     content:"";
     display: block;
     height: 3px;
@@ -190,7 +186,6 @@ body{
 
 /* 關於我們圖片 */
 .aboutus{
-    /* border: 1px solid #000; */
     width: 1400px;
     margin: 0 auto;
     margin-top: 120px;
@@ -200,7 +195,6 @@ body{
     justify-content: space-between;
 }
 .aboutus_pic{
-    /* border: 1px solid #000; */
     width: 800px;
     display: flex;
     gap: 12px;
@@ -224,13 +218,11 @@ body{
 
 /* 關於我們 文字 */
 .aboutus p{
-    /* border: 1px solid #000; */
     width: 320px;
     text-align: justify;
 }
 
 .aboutus h3{
-    /* border: 1px solid #000; */
     width: 500px;
     font-size: 50px;
     font-family: 'marck script';
@@ -245,7 +237,6 @@ body{
 
 .aboutus_text{
     height: 100%;
-    /* border: 1px solid #000; */
     display: flex;
     flex-direction: column;
     padding-left: 20px;    
@@ -254,13 +245,11 @@ body{
 }
 
 .aboutus_text>div{
-    /* border: 1px solid #000; */
     display: flex;
     justify-content: center;
 }
 
 .aboutus_block{
-    /* border: 1px solid #000; */
     width: 100%;
     display: flex;
     align-items: center;
@@ -270,7 +259,6 @@ body{
 
 /* 商品種類 */
 .producttype{
-    /* border: 1px solid #000; */
     width: 1400px;
     margin: 0 auto;
     margin-top: 100px;
@@ -288,7 +276,6 @@ body{
 }
 
 .producttype_block{
-    /* border: 1px solid #000; */
     width: 1200px;
     height: 600px;
     margin-top: 20px;
@@ -334,7 +321,6 @@ body{
 }
 
 .producttype_title_middle{
-    /* border: 1px solid #000; */
     width: 150px;
     height: 60px;
     background-color: #E7F1DC;
@@ -355,14 +341,12 @@ body{
 }
 
 .producttype_title>h3, .producttype_title_middle>h3{
-    /* border: 1px solid #000; */
     text-align: center;
     line-height: 60px;
 }
 
 
 .producttype_text{
-    /* border: 1px solid #000; */
     height: 350px;
     display: flex;
     flex-direction: column;
@@ -372,7 +356,6 @@ body{
 }
 
 .producttype_text_decoration:nth-child(1),.producttype_text_decoration:nth-child(3){
-    /* border: 1px solid #000; */
     width: 150px;
     height: 240px;
     background-image: url(../photos/index/producttyple_text_right.png);
@@ -388,13 +371,11 @@ body{
 }
 
 .producttype_right{
-    /* border: 1px solid #000; */
     display: flex;
     flex-direction: column;
 }
 
 .producttype_right_pic{
-    /* border: 1px solid #000; */
     width: 700px;
     height: 300px;
     display: flex;
@@ -410,7 +391,6 @@ body{
 
 
 .producttype_right_pic img{
-    /* border: 1px solid #000; */
     width: 350px;
     height: 240px;
     background-repeat: no-repeat;
@@ -436,18 +416,15 @@ body{
 
 
 .producttype_text_middle{
-    /* border: 1px solid #000; */
     align-self: flex-start;
 
 }
 .producttype_text_middle a{
-    /* border: 1px solid #000; */
     align-self: flex-start;
 }
 
 .producttype>div:first-child{
     width: 250px;
-    /* border: 1px solid #000; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -465,25 +442,13 @@ body{
 
 
 
-/* 圖片區塊 */
-.pic{
-    /* border: 1px solid #000; */
-    width: 100%;
-    height: 650px;
-    margin-top: 60px;
-    background-image: url(../photos/index/pic_block.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
 /* 活動消息區塊 */
 
 .news_bg{
     width: 100%;
     height: 900px;
     margin: auto;
+    margin-top: 60px;
     background: linear-gradient(
         #fff0 0%,
         #fff0 50%,
@@ -495,7 +460,6 @@ body{
     justify-content: center;
 }
 .news{
-    /* border: 1px solid #000; */
     display:flex;
     justify-content: center;
     flex-direction: column;
@@ -504,14 +468,12 @@ body{
 
 .news>div:first-child{
     width: 330px;
-    /* border: 1px solid #000; */
     display: flex;
     align-items: center;
     justify-content: space-between;
 
 }
 .news_main{
-    /* border: 1px solid #000; */
     width: 1400px;
     display:flex;
     justify-content: space-between;
@@ -519,14 +481,12 @@ body{
 }
 
 .news_block{
-    /* border: 1px solid #000; */
     display: flex;
     flex-direction: column;
 
 }
 
 .news_block img{
-    /* border: 1px solid #000; */
     margin: 0 auto;
     width: 380px;
     height: 300px;
@@ -536,7 +496,6 @@ body{
 }
 
 .news_block h3{
-    /* border: 1px solid #000; */
     width: 400px;
     text-align: center;
     margin-top: 20px;
@@ -544,13 +503,11 @@ body{
 }
 
 .news_block p{
-    /* border: 1px solid #000; */
     width: 350px;
     text-align:justify;
 }
 
 .news_text{
-    /* border: 1px solid #000; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -558,7 +515,6 @@ body{
 
 /* 各區塊h2標題樣式 */
 h2{
-    /* border: 1px solid #000; */
     text-align: center;
     line-height: 60px;
 }
@@ -566,7 +522,6 @@ h2{
 .aboutus_text h2:nth-child(2),
 .producttype h2:nth-child(2),
 .news h2:nth-child(2){
-    /* border: 1px solid #000; */
     font-size: 20px;
     text-align: center;
 }
@@ -576,7 +531,6 @@ h2{
 .aboutus_text>div,
 .producttype>div:first-child,
 .news>div:first-child{
-    /* border: 1px solid #000; */
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
@@ -594,7 +548,6 @@ h2{
 }
 
 .producttype>div:first-child>h2{
-    /* border: 1px solid #000; */
     width: 350px;
 }
 
