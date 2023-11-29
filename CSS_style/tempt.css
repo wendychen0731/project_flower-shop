@@ -61,7 +61,8 @@ header{
 main{
     width: 100%;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,7 +82,6 @@ nav{
     padding: 5px;
 }
 .mynav{
-   
     width: 1400px;
     height: 100px;
     display: flex;

@@ -30,7 +30,6 @@ body{
 
 
 .menu{
-    width: 250px;
     position: relative;
     top: 0;
     bottom: 0;
@@ -38,7 +37,7 @@ body{
 
 .menu_title{
     border: 3px solid #4FAE4F;
-    width: 250px;
+    width: 200px;
     margin: auto;
     border-radius: 20px;
     padding: 20px;
@@ -64,13 +63,13 @@ body{
 /* 主要內容區塊 */
 
 .main_block{
+
     width: 1050px;
     margin: auto;
     display: flex;
     flex-direction: row-reverse;
     align-items: space-between;
     position: relative;
-    padding: 20px 0;
     margin-bottom: 40px;
 }
 
@@ -79,6 +78,7 @@ body{
 .main_block:nth-child(even){
     flex-direction: row;
     position: relative;
+    padding-top: 20px;
 }
 
 /* 主要內容照片設定 */
@@ -125,7 +125,7 @@ body{
 }
 /* 文字區塊間距及裝飾框線 */
 .text_block h2{
-    margin: 40px auto;
+    margin: 40px auto 20px auto;
     width: 250px;
     text-align: center;
 }

@@ -24,7 +24,7 @@ main>h2:first-child{
 .title{
     /* border: 1px solid #000; */
     margin-top: 60px;
-    background-color: #6FBC6D;
+    background-color: #4FAE4F;
     display: flex;
 }
 
@@ -75,7 +75,7 @@ main>h2:first-child{
 }
 
 button:not(.cancel){
-    background-color: #6FBC6D;
+    background-color: #4FAE4F;
     color: #fff;
  }
 
