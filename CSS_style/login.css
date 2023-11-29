@@ -1,0 +1,104 @@
+input{
+    border: none;
+    border-bottom: 1px solid #8A8A8A;
+    line-height: 40px;
+    flex-grow: 1;
+    font-family: 'klee One';
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+body{
+    background: linear-gradient(
+        #fff 0%,
+        #E2E9D9 100%
+    );
+}
+
+.login_container{
+    width: 760px;
+    margin: 0 0 100px 0;
+    border-radius: 20px;
+    border: 1px solid #8A8A8A;
+    box-shadow: 5px 5px 6px #8A8A8A;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+}
+
+/* 標題區塊 */
+.login_title{
+    margin-bottom: 40px;
+}
+.login_title h2, .login_title h3{
+    /* border: 1px solid #000; */
+    text-align: center;
+}
+
+.login_title h2::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #4FAE4F;
+}
+
+/* 帳號密碼輸入區塊 */
+
+.login_block{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.login_block>div{
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_block>div>p{
+    text-align: center;
+}
+
+.login_container a{
+    align-self: flex-end;
+    font-size: 16px;
+    color: #8A8A8A;
+}
+
+/* 按鈕區塊 */
+
+.login_btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+}
+
+.login_btn>a{
+    align-self: flex-start;
+    margin-top: 40px;
+    color: #8A8A8A;
+}
+
+.login_btn>button{
+    width: 100%;
+    margin-top: 20px;
+    line-height: 50px;
+}
+
+.login_btn>.login{
+    background-color: #4FAE4F;
+    color: #fff;
+}
+
+.login_btn>.cancel{
+    color: #4FAE4F;
+    background-color: #fff;
+    border: 2px solid #4FAE4F;
+}

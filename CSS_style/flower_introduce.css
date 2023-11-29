@@ -14,16 +14,17 @@ a{
 }
 
 .label p{
+    font-size: 18px;
     width: 150px;
     height: 50px;
     text-align: center;
     line-height: 50px;
+    color: #4FAE4F;
 }
 
 .label div{
-    /* border: 1px solid #000;  */
+    border: 1px solid #4FAE4F; 
     border-radius: 10px;
-    background-color: #E7F1DC;
     box-shadow: 5px 5px 6px rgba(200,200,200,0.5);
 }
 

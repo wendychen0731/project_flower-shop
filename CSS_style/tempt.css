@@ -17,7 +17,7 @@ h1, h2{
 
 p,ul,li:not(.footer p,ul,li){
         line-height: 40px;
-        font-size: 16px;
+        font-size: 18px;
         letter-spacing: 2px;
         font-family: 'Klee One';
 }
@@ -35,13 +35,14 @@ a{
 }
 
 h3{
-    font-size: 28px;
+    font-size: 24px;
     font-family: 'Klee One';
     letter-spacing: 8px;
+    line-height: 40px;
 }
 
 h4{
-    font-size: 24px;
+    font-size: 18px;
     font-family: 'Klee One';
     font-weight: normal;
     line-height: 40px;
@@ -76,11 +77,12 @@ main{
 }
 .mynav{
     background-color: #fff; 
+    width: 100%;
     height: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: relative;
+    top: 0;
     z-index: 2;
 }
 
@@ -132,10 +134,9 @@ main{
 .logo{
     /* border-bottom: 1px solid #b8b4b4; */
     background-color: #fff;
-    position: relative;
-    top: 5px;    
+    display: flex;
+    align-items: center;
 }
-
 
 
 /* 導覽列_下拉選單 */
