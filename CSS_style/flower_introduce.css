@@ -151,12 +151,13 @@ p{
     height: 200px;
     background: url(../photos/flower_introduce/flower_introduce_bottom_tree.png) no-repeat;
     position: absolute;
-    right: -160px;
-    bottom: -170px;
+    right: -110px;
+    bottom: -130px;
     z-index: -1;
 }
 .bottom_text{
-    width: 60%;
+    /* border: 1px solid #000; */
+    width: 700px;
     display: flex;
     margin: 80px 0 100px 0;
     align-self: center;

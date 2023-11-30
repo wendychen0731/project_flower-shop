@@ -408,11 +408,11 @@ header{
     height: 100%;
     transform: scale(0);
     overflow: hidden;
-    position: absolute;
     /* background-color: rgba(51, 110, 51, 0.4); */
     background-color: rgba(0,0,0,.3);
     backdrop-filter: blur(8px);
     /* 在區塊背景加入特效 */
+    position: absolute;
     top: 0;
     left: 0;
     transition: .8s;
