@@ -93,10 +93,7 @@ main>h2:first-child{
    /* border: 1px solid #000; */
     width: 60px;
     height: 60px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: 10px;
     background-color: #4FAE4F;
     color: #fff;
  }

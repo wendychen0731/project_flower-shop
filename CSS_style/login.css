@@ -97,10 +97,3 @@ body{
     color: #fff;
     font-size: 18px;
 }
-
-.login_btn>.cancel{
-    color: #4FAE4F;
-    background-color: #fff;
-    border: 2px solid #4FAE4F;
-    font-size: 18px;
-}
