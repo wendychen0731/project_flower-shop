@@ -98,21 +98,23 @@ body{
 
  .item_btn_block{
    display: flex;
+   align-items: center;
+   justify-content: center;
 
  }
 
  .decrease, .increase{
     width: 60px;
     height: 60px;
-    border-radius: 50%;
+    border-radius: 10px;
  }
 
- .item_btn p{
-    font-size: 18px;
-    padding: 0 30px;
-    margin: 0 20px;
-    line-height: 60px;
-    background-color: rgba(202, 219, 193, 0.5);
+ .item_btn_block>p{
+   /* border: 1px solid #000; */
+   line-height: 60px;
+   padding: 0 30px;
+   margin: 0 20px;
+   background-color: rgba(202, 219, 193, 0.5);
  }
  
  .addtocart{
