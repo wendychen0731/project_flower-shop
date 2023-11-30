@@ -12,6 +12,7 @@ body{
     padding-top: 80px;
     padding-bottom: 80px;
     position: relative;
+    z-index: 2;
 }
 
 .banner_container{
@@ -306,18 +307,28 @@ body{
 }
 
 .producttype_smallpic p{
-    width: 400px;
+    width: 100%;
+    padding: 150px;
     align-self: center;
+    /* text-align: justify; */
 
 }
 
 .producttype_smallpic>div{
     width: 700px;
-    height: 300px;
     display: flex;
     align-items: flex-end;
     justify-content: space-evenly;
     overflow: hidden;
+}
+
+.producttype_block .producttype_smallpic>div>div{
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.producttype_block:nth-child(2) .producttype_smallpic>div>div{
+    margin-right: 10px;
 }
 
 .producttype_smallpic>div img{
@@ -326,7 +337,6 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding-left: 10px;
 }
 
 .producttype_block:nth-child(2) .producttype_smallpic img{

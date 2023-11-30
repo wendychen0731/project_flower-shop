@@ -154,10 +154,10 @@ body{
     width: 100%;
     background: linear-gradient(
         #fff 0%,
-        #fff 25%,
-        #E7F1DC 25%,
-        #E7F1DC 64%,
-        #fff 64%,
+        #fff 23%,
+        #E7F1DC 23%,
+        #E7F1DC 63%,
+        #fff 63%,
         #fff 100%
     );
 }

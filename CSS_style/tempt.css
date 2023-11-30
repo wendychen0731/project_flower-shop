@@ -63,7 +63,7 @@ header{
 main{
     width: 100%;
     margin: 0 auto;
-    margin-top: 60px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,16 +78,20 @@ img{
 
 nav{
     width: 100%;
-    background-color: #fff; 
+    background-color: rgba(255,255,255,.6); 
+    backdrop-filter: blur(10px);
     display: flex;
     justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 3;
 }
 .mynav img:first-child{
     padding: 5px;
 }
 .mynav{
     width: 1400px;
-    height: 100px;
+    height: 80px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -142,7 +146,6 @@ nav{
 
 .logo{
     /* border-bottom: 1px solid #b8b4b4; */
-    background-color: #fff;
     display: flex;
     align-items: center;
 }
@@ -151,7 +154,8 @@ nav{
 /* 導覽列_下拉選單 */
 .item_drop{
     padding: 0 auto;
-    background-color: rgba(255,255,255,.8);
+    background-color: rgba(255,255,255,.7); 
+    backdrop-filter: blur(30px);
     display: flex;
     flex-direction: column;
     justify-content: center;
