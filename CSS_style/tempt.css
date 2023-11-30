@@ -1,59 +1,61 @@
 *{
     box-sizing: border-box;
-    margin: 0;
-    
+    margin: 0;    
 }
 
 html,body{
     scroll-behavior: smooth;
 }
 
+h1,h2,h3,h4,p,ul,li:not(.footer p,ul,li), button{
+    font-family: 'Klee One';
+}
+
 h1, h2{
     font-size: 32px;
     letter-spacing: 8px;
-    font-family: 'Klee One';
     line-height: 60px;
 }
 
-p,ul,li:not(.footer p,ul,li){
-        line-height: 40px;
-        font-size: 18px;
-        letter-spacing: 2px;
-        font-family: 'Klee One';
-}
-
-ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-a{
-    font-family: 'Klee One';
-    text-decoration: none;
-    color: #000;
+h2{
+    font-size: 28px;
 }
 
 h3{
     font-size: 24px;
-    font-family: 'Klee One';
     letter-spacing: 8px;
     line-height: 40px;
 }
 
 h4{
     font-size: 18px;
-    font-family: 'Klee One';
     font-weight: normal;
     line-height: 40px;
 }
 
-button{
-    font-size: 24px;
-    font-family: 'Klee One';
-    border: none;
+
+
+p, ul, li:not(.footer p,ul,li), button{
+    line-height: 40px;
+    font-size: 18px;
+    letter-spacing: 2px;
 }
 
+ul{
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+a{
+text-decoration: none;
+color: #000;
+}
+button{
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+}
 
 header{
     width: 100%;
@@ -67,6 +69,9 @@ main{
     align-items: center;
 }
 
+img{
+    vertical-align: middle;
+}
 
 
 /* 導覽列 */
@@ -198,8 +203,6 @@ nav{
     padding: 0 40px;
     
 }
-
-
 
 .footer_followus{
     border-left: 2px solid #fff;

@@ -14,7 +14,7 @@ main{
 main>h2:first-child{
     /* border: 1px solid #000; */
     width: 200px;
-    height: 60px;
+    
     text-align: center;
     border-bottom: 3px solid #4FAE4F;
     margin: auto;
@@ -73,37 +73,36 @@ main>h2:first-child{
 .item_unitprice{
     width: 118px;
 }
-
-button:not(.cancel){
-    background-color: #4FAE4F;
-    color: #fff;
- }
-
  .cancel{
    background-color: rgba(0,0,0,0);
  }
 
 .btn_group{
     display: flex;
+    align-items: center;
 }
 
-.btn_group p{
+.btn_group>p{
     font-size: 18px;
     padding: 0 30px;
     margin: 0 20px;
-    line-height: 65px;
-    height: 65px;
+    line-height: 60px;
     background-color: rgba(202, 219, 193, 0.5);
 }
-
 .decrease, .increase{
    /* border: 1px solid #000; */
-    width: 65px;
-    height: 65px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #4FAE4F;
+    color: #fff;
+ }
+
+ .decrease>p, .increase>p{
+   font-size: 24px;
  }
 
  .item img:last-child{
@@ -197,16 +196,19 @@ button:not(.cancel){
 
  .receiver_block>button{
    /* border: 1px solid #000; */
-    width: 400px;
-    height: 50px;
+    width: 500px;
+    height: 60px;
     margin-top: 20px;
     align-self: center;
+    color: #4FAE4F;
+    border: 2px solid #4FAE4F;
+    background-color: rgba(0,0,0,0);
+
  }
 
  .order_information{
    /* border: 1px solid #000; */
     width: 600px;
-    height: 270px;
     margin-top: 30px;
     padding-left: 30px;
     background-color: rgba(202, 219, 193, 0.5);
@@ -214,17 +216,24 @@ button:not(.cancel){
     flex-direction: column;
     justify-content: space-evenly;
  }
+
+ .order_information p{
+   line-height: 80px;
+ }
+
  .order_amount{
     width: 600px;
     background-color: #FFCD84;
     padding-left: 30px;
     font-weight: bold;
-    height: 50px;
+    border-radius: 10px;
  }
  .order_amount>p{
-    line-height: 50px;
+    line-height: 60px;
  }
  .info_right>button{
+   background-color: #4FAE4F;
+    color: #fff;
     width: 600px;
-    height: 50px;
+    height: 60px;
  }

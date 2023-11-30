@@ -5,18 +5,16 @@ body{
 }
 
 .class{
-    /* border: 1px solid #000; */
     width: 1400px;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 .title_block{
     /* border: 1px solid #000; */
     width: 680px;
-    height: 70px;
     display: flex;
     justify-content: space-between;
     background-color: #FFCD84;
@@ -93,14 +91,16 @@ ul.target>li, .class_right ul>li{
  }
 
  .decrease, .increase{
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
  }
 
-.decrease span, .increase span{
-    /* border: 1px solid #000; */
-    display: block;
+.decrease>p, .increase>p{   
+    font-size: 24px;
 }
 
  button{
@@ -145,12 +145,14 @@ ul.target>li, .class_right ul>li{
  .btn_group{
     /* border: 1px solid #000; */
     display: flex;
+    align-items: center;
+    justify-content: center;
  }
  .btn_group>p{
     margin: 0 20px;
     font-size: 18px;
     padding: 0 30px;
-    line-height: 50px;
+    line-height: 60px;
     background-color: rgba(202, 219, 193, 0.5);
     /* border: 1px solid #000; */
  }

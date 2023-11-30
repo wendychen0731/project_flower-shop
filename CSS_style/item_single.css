@@ -54,7 +54,6 @@ body{
 
  .item_content_text>h3{
     width: 650px;
-    height: 60px;
     background-color: #FFCD84;
     text-align: center;
     line-height: 60px;
@@ -103,22 +102,27 @@ body{
  }
 
  .decrease, .increase{
-    width: 65px;
-    height: 65px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
  }
 
  .item_btn p{
     font-size: 18px;
-    height: 65px;
     padding: 0 30px;
     margin: 0 20px;
-    line-height: 65px;
+    line-height: 60px;
     background-color: rgba(202, 219, 193, 0.5);
  }
- .buy, .addtocart{
+ 
+ .addtocart{
     height: 65px;
-    padding: 0 20px;
+    padding: 0 10px;
+ }
+
+ .buy{
+   height: 65px;
+   padding: 0 20px;
  }
 
  .addtocart{
@@ -130,6 +134,7 @@ body{
  /* 備註區塊 */
 
  .shoppingguide, .otheritem{
+   width: 1400px;
     margin: 60px auto;
     border-top: 3px solid #4FAE4F;
     padding: 40px;
@@ -174,3 +179,6 @@ body{
    margin-top: 60px;
 }
 
+.otheritem h3, .otheritem p{
+   text-align: center;
+}

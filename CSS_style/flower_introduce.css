@@ -16,9 +16,8 @@ a{
 .label p{
     font-size: 18px;
     width: 150px;
-    height: 50px;
-    text-align: center;
     line-height: 50px;
+    text-align: center;
     color: #4FAE4F;
 }
 
@@ -151,7 +150,7 @@ p{
     height: 200px;
     background: url(../photos/flower_introduce/flower_introduce_bottom_tree.png) no-repeat;
     position: absolute;
-    right: -110px;
+    right: -150px;
     bottom: -130px;
     z-index: -1;
 }
