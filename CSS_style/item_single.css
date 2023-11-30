@@ -52,7 +52,7 @@ body{
     justify-content: space-between;
  }
 
- .item_content_text>h3{
+ .item_content_text>h2{
     width: 650px;
     background-color: #FFCD84;
     text-align: center;
@@ -181,6 +181,11 @@ body{
    margin-top: 60px;
 }
 
-.otheritem h3, .otheritem p{
+.otheritem h4,.otheritem p{
    text-align: center;
+}
+
+.otheritem h4{
+   font-size: 24px;
+   font-weight: bold;
 }

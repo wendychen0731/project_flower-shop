@@ -141,11 +141,41 @@ ul.target>li, .class_right ul>li{
 }
 
  .buy{
-    /* border: 1px solid #000; */
+    border: 1px solid #4FAE4F;
     width: 650px;
     height: 60px;
+    overflow: hidden;
     margin-top: 20px;
+    position: relative;
+    z-index: 1;
+    transition: all .5s linear;
  }
+
+ .buy>p{
+    transition: .5s;
+ }
+
+ .buy::before{
+    content:'';
+    width: 0;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .8s;
+    z-index: -1;
+ }
+
+ .buy:hover::before{
+    width: 100%;
+ }
+
+ .buy:hover>p{
+    color: #4FAE4F;
+    transition: .5s;
+ }
+
 
  .btn_group{
     /* border: 1px solid #000; */

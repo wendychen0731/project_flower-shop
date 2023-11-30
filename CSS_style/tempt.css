@@ -183,13 +183,18 @@ nav{
 
 
 /* footer */
+footer{
+    background-color: #4FAE4F;
+}
 .footer{
     background-color: #4FAE4F;
+    width: 1400px;
+    margin: auto;
     padding: 40px 0px;
     position: relative;
     display: flex;
     flex-direction: column;
-    border-radius: 900px 900px 0% 0%/140px 140px 0% 0%;
+    /* border-radius: 900px 900px 0% 0%/140px 140px 0% 0%; */
     
 }
 

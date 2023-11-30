@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./CSS_style/normalize.css">
     <link rel="stylesheet" href="./CSS_style/tempt.css">
     <link rel="stylesheet" href="./CSS_style/class.css">
+    <link rel="stylesheet" href="./JS/button_number.js">
 <!-- 英文字體 marck script -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -117,15 +118,14 @@
                         <div class="class_btn_top">
                             <p>報名人數：</p> 
                             <div class="btn_group">
-                                <button class="decrease"><p>-</p></button>
-                                <p>1</p>
-                                <button class="increase"><p>+</p></button>
+                                <button class="decrease" id="number_decrease"><p>-</p></button>
+                                <p id="number">1</p>
+                                <button class="increase" id="number_increase"><p>+</p></button>
                             </div>
                         </div>
-                        <a href="./cart.html"><button class="buy">前往報名</button></a>
+                        <a href="./cart.html"><button class="buy"><p>前往報名</p></button></a>
                     </div>
                 </div>
-                
             </div>
         </section>
     </main>
