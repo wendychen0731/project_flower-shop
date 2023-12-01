@@ -153,7 +153,7 @@ body{
 .aboutus_pic{
     width: 800px;
     display: flex;
-    gap: 12px;
+    gap: 15px;
     align-items: center;
 }
 
@@ -327,7 +327,7 @@ body{
     margin-left: 10px;
 }
 
-.producttype_block:nth-child(2) .producttype_smallpic>div>div{
+.producttype_block:nth-child(2) .producttype_smallpic>div{
     margin-right: 10px;
 }
 
