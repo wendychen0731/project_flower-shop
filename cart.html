@@ -100,7 +100,7 @@
                 <p class="item_unitprice"> $1980</p>
                 <div class="btn_group">
                     <button class="decrease">-</button>
-                    <p class="item_qty">1</p>
+                    <input type="number" value="1" max="10" min="1"oninput="if(value.length>2)value.slice=(0,2);if(value>10)value=10;if(value<0)value=0"></input>
                     <button class="increase">+</button>
                 </div>
                 <p class="item_total">NT$ 1980</p>
@@ -112,7 +112,7 @@
                 <p class="item_unitprice"> $1680</p>
                 <div class="btn_group">
                     <button class="decrease"><p>-</p></button>
-                    <p>1</p>
+                    <input type="number" value="1" max="10" min="1"oninput="if(value.length>2)value.slice=(0,2);if(value>10)value=10;if(value<0)value=0"></input>
                     <button class="increase"><p>+</p></button>
                 </div>
                 <p class="item_total">NT$ 1680</p>

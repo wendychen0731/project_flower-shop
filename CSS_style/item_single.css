@@ -109,10 +109,11 @@ body{
     border-radius: 10px;
  }
 
- .item_btn_block>p{
-   /* border: 1px solid #000; */
-   line-height: 60px;
-   padding: 0 30px;
+ .item_btn_block>input{
+   text-align: center;
+   border: none;
+   height: 60px;
+   width: 60px;
    margin: 0 20px;
    background-color: rgba(202, 219, 193, 0.5);
  }

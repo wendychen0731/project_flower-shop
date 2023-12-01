@@ -83,9 +83,12 @@ main>h2:first-child{
     align-items: center;
 }
 
-.btn_group>p{
+.btn_group>input{
+    border: none;
+    appearance:none;
     font-size: 18px;
-    padding: 0 30px;
+    text-align: center;
+    width: 60px;
     margin: 0 20px;
     line-height: 60px;
     background-color: rgba(202, 219, 193, 0.5);

@@ -7,7 +7,8 @@ html,body{
     scroll-behavior: smooth;
 }
 
-h1,h2,h3,h4,p,ul,li:not(.footer p,ul,li), button, a{
+h1,h2,h3,h4,p,ul,li:not(.footer p,ul,li), button, a, 
+input{
     font-family: 'Klee One';
 }
 
@@ -73,11 +74,17 @@ img{
     vertical-align: middle;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+    appearance: none;
+    margin: 0;
+}
+
+
 
 /* 導覽列 */
 
 nav{
-    padding: 10px;
     width: 100%;
     background-color: rgba(255,255,255,.6); 
     backdrop-filter: blur(10px);
@@ -92,7 +99,7 @@ nav{
 }
 .mynav{
     width: 1400px;
-    height: 80px;
+    padding: 10px 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -145,11 +152,6 @@ nav{
     text-align: center;
 }
 
-.logo{
-    /* border-bottom: 1px solid #b8b4b4; */
-    display: flex;
-    align-items: center;
-}
 
 
 /* 導覽列_下拉選單 */
@@ -189,7 +191,7 @@ footer{
 .footer{
     width: 1400px;
     margin: auto;
-    padding: 40px 0px;
+    padding: 20px 0px;
     position: relative;
     display: flex;
     flex-direction: column;
