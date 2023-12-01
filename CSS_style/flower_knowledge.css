@@ -84,17 +84,11 @@ body{
 
 /* 主要內容照片設定 */
 .main_block>.main_block_img{
-    background-color: #E7F1DC;
     align-self: flex-start;
     position: relative;
     top: 172px;
-    border-radius: 50% 45% 58% 42%/39% 38% 52% 60%;
-    animation: img 2s 2s cubic-bezier(.22,.6,.8,.49) infinite alternate; 
 }
 
-.main_block:nth-child(2)>.main_block_img{
-    background-color: #4FAE4F;
-}
 
 .main_block_img img:first-child{
     width: 400px;
