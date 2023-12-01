@@ -46,6 +46,8 @@ body{
    height: 30px;
 }
 
+/* 內容區塊 */
+
  .item_content{
     display: flex;
     flex-direction: column;
@@ -138,7 +140,7 @@ body{
 
  .shoppingguide, .otheritem{
    width: 1400px;
-    margin: 60px auto;
+   margin-top: 60px;
     border-top: 3px solid #4FAE4F;
     padding: 40px;
     display: flex;
