@@ -187,7 +187,6 @@ footer{
     background-color: #4FAE4F;
 }
 .footer{
-    background-color: #4FAE4F;
     width: 1400px;
     margin: auto;
     padding: 40px 0px;
@@ -216,7 +215,6 @@ footer{
 
 .footer_followus{
     border-left: 2px solid #fff;
-    padding-left: 40px;
     display: flex;
     flex-direction: row-reverse;
     width: 30.333333%;
