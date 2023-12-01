@@ -6,6 +6,10 @@ main{
    margin-bottom: 100px;
 }
 
+body{
+   background-image: url(../photos/index/white-diamond.png);
+   background-attachment: fixed;
+}
 
 .cart{
     /* border: 1px solid #000; */
