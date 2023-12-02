@@ -5,7 +5,7 @@ body{
 }
 
 .class{
-    width: 1400px;
+    width: 1200px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -14,7 +14,7 @@ body{
 
 .title_block{
     /* border: 1px solid #000; */
-    width: 680px;
+    width: 547px;
     display: flex;
     justify-content: space-between;
     background-color: #FFCD84;
@@ -58,31 +58,23 @@ ul.target>li, .class_right ul>li{
     margin-top: -6px;
 }
 
-.class_left>img{
-    width: 680px;
-    height: 400px;
-    margin-top: 20px;
+.class img{
     border-radius: 20px;
     background-position: center;
     background-size: contain;
 }
 
 .class_left{
-    width: 700px;
+    width: 550px;
 }
 
 .class_right{
-    /* border: 1px solid #000; */
-    width: 700px;
+    margin-left: 10px;
+    width: 640px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-}
-
-.class_right>img{
-    width: 700px;
-    border-radius: 20px;
 }
 
 .class_btn{
@@ -105,14 +97,13 @@ ul.target>li, .class_right ul>li{
 }
 
  button{
-    background-color: #4FAE4F;
+    background-color: #3C8D3C;
     color: #fff;
     font-size: 24px;
     border: none;
  }
 
 .class_right_bottom{
-    /* border: 1px solid #000; */
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -140,9 +131,10 @@ ul.target>li, .class_right ul>li{
     font-size: 24px;
 }
 
+
  .buy{
-    border: 1px solid #4FAE4F;
-    width: 650px;
+    border: 1px solid #3C8D3C;
+    width: 600px;
     height: 60px;
     overflow: hidden;
     margin-top: 20px;
@@ -172,7 +164,7 @@ ul.target>li, .class_right ul>li{
  }
 
  .buy:hover>p{
-    color: #4FAE4F;
+    color: #3C8D3C;
     transition: .5s;
  }
 

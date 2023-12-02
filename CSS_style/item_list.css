@@ -4,8 +4,13 @@ body{
     background-attachment: fixed;
 }
 
+.main img{
+    border-radius: 20px;
+}
+
 /* 標題區塊 */
 .title{
+    width: 1000px;
     margin: auto;
     margin-bottom: 100px;
     position: relative;
@@ -16,7 +21,8 @@ body{
 }
 
 .title_text{
-    /* border: 1px solid #000; */
+    font-family: 'klee One';
+    padding: 0 10px;
     flex-direction: column;
     justify-content: center;
     position: absolute;
@@ -61,15 +67,16 @@ body{
     100%{
         top: 230px;
         opacity: 1;
+
     }
 }
 
 @keyframes title_border{
     0%{
-        border-bottom: 0px solid #4FAE4F;
+        border-bottom: 0px solid #3C8D3C;
     }
     100%{
-        border-bottom: 3px solid #4FAE4F;
+        border-bottom: 3px solid #3C8D3C;
 }
 }
 
@@ -86,7 +93,7 @@ body{
 
 /* 商品列 */
 .itemlist{
-    width: 1400px;
+    width: 1200px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -95,17 +102,17 @@ body{
 
 .itemlist_side{
     border-radius: 20px;
-    height: 300px;
     position: sticky;
     top: 100px;
 
 }
 
 .itemlist_side ul{
+    width: 150px;
     list-style: none;
     line-height: 50px;
-    padding: 30px;
-    font-size: 24px;
+    padding: 10px;
+    font-size: 18px;
 }
 
 .itemlist_side a{
@@ -118,7 +125,7 @@ body{
     display: block;
     width: 0%;
     height: 3px;
-    background-color: #4FAE4F;
+    background-color: #3C8D3C;
     transition: 0.5s;
 }
 

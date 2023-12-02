@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./CSS_style/normalize.css">
     <link rel="stylesheet" href="./CSS_style/tempt.css">
     <link rel="stylesheet" href="./CSS_style/cart.css">
+    <script src="./JavaScript/qty.js"></script>
 <!-- 英文字體 marck script -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -99,9 +100,9 @@
                 <p class="item_name">牡丹百合-陶瓶(白)</p>
                 <p class="item_unitprice"> $1980</p>
                 <div class="btn_group">
-                    <button class="decrease">-</button>
-                    <input type="number" value="1" max="10" min="1"oninput="if(value.length>2)value.slice=(0,2);if(value>10)value=10;if(value<0)value=0"></input>
-                    <button class="increase">+</button>
+                    <button class="decrease" onclick="qty(this)">-</button>
+                    <input type="number" id="qty" value="1" max="10" min="1"oninput="if(value.length>2)value.slice=(0,2);if(value>10)value=10;if(value<0)value=0"></input>
+                    <button class="increase" onclick="qty(this)">+</button>
                 </div>
                 <p class="item_total">NT$ 1980</p>
                 <button class="cancel"><img src="./photos/icon/icon_cross.png" alt="icon"></button>
@@ -173,11 +174,10 @@
                 <h4>Sunlight Floral Shop</h4>
             </div>
             <div class="footer_contact">
-                <p>地址: 桃園市中壢區復興路46號</p>
                 <p>電話: 03-123-4567</p>
-                <p>營業時間：</p>
-                <p>每週一 至週六</p>
+                <p>營業時間：每週一 至週六</p>
                 <p>11:00 a.m. ~ 20:30 p.m.</p>
+                <p>地址: 桃園市中壢區復興路46號</p>
             </div>
             <div class="footer_followus">
                 <div class="footer_icon">

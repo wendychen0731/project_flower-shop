@@ -70,7 +70,7 @@ body{
  }
 
  button{
-    background-color: #4FAE4F;
+    background-color: #3C8D3C;
     color: #fff;
     font-size: 24px;
     border: none;
@@ -80,18 +80,6 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
- }
-
- .item_btn>div:last-child{
-   width: 380px;
-   display: flex;
-   justify-content: space-between;
- }
-
- .item_btn>div:last-child>button{
-   display: flex;
-   align-items: center;
-   justify-content: center;
  }
 
  .item_btn>div:last-child>button>img{
@@ -119,29 +107,48 @@ body{
    margin: 0 20px;
    background-color: rgba(202, 219, 193, 0.5);
  }
- 
- .addtocart{
-    height: 65px;
-    padding: 0 10px;
+
+ .buy, .addtocart{
+   height: 65px;
+   padding: 0 10px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
  }
 
  .buy{
-   height: 65px;
-   padding: 0 20px;
+   width: 170px;
+ }
+
+ .addtocart p{
+   line-height: 65px;
  }
 
  .addtocart{
-   border: 3px solid #4FAE4F;
+   border: 3px solid #3C8D3C;
    background-color: #fff;
-   color: #4FAE4F;
+   color: #3C8D3C;
+   width: 200px;
  }
+
+ .buy>img,
+ .addtocart>img{
+   vertical-align: bottom;
+ }
+
+ .item_btn>div:last-child{
+   width: 380px;
+   display: flex;
+   justify-content: space-between;
+ }
+
 
  /* 備註區塊 */
 
  .shoppingguide, .otheritem{
    width: 1400px;
    margin-top: 60px;
-    border-top: 3px solid #4FAE4F;
+    border-top: 3px solid #3C8D3C;
     padding: 40px;
     display: flex;
     flex-direction: column;

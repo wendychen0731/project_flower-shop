@@ -7,7 +7,7 @@ body{
 
 /* banner */
 .banner{
-    width: 1400px;
+    width: 1200px;
     margin: auto;
     padding-top: 80px;
     padding-bottom: 80px;
@@ -29,8 +29,8 @@ body{
     width: 140px;
     height: 140px;
     position: absolute;
-    top: 140px;
-    left: 110px;
+    top: 120px;
+    left:70px;
 }
 .banner_sun>div:first-child{     
     background-image: url(../photos/index/index_banner_4-2.png);
@@ -142,7 +142,7 @@ body{
 
 /* 關於我們圖片 */
 .aboutus{
-    width: 1400px;
+    width: 1200px;
     margin: 0 auto;
     margin-top: 120px;
     display: flex;
@@ -215,7 +215,7 @@ body{
 
 /* 商品種類 */
 .producttype{
-    width: 1400px;
+    width: 1200px;
     margin: 0 auto;
     margin-top: 100px;
     display: flex;
@@ -234,7 +234,6 @@ body{
 
 .producttype_block{
     width: 1200px;
-
     margin-top: 20px;
     display: flex; 
     justify-content: space-between;
@@ -308,7 +307,7 @@ body{
 
 .producttype_smallpic p{
     width: 100%;
-    padding: 150px;
+    padding: 40px 60px;
     align-self: center;
     text-align: justify;
 
@@ -347,7 +346,6 @@ body{
 .producttype_text{
     /* border: 1px solid red; */
     width: 600px;
-    height: 120px;
     margin: auto 0;
     display: flex;
     justify-content: flex-end;
@@ -444,7 +442,7 @@ body{
 
 }
 .news_main{
-    width: 1400px;
+    width: 1200px;
     display:flex;
     justify-content: space-between;
     margin-top: 20px;
@@ -514,7 +512,7 @@ h2{
     display: block;
     width: 100%;
     height: 3px;
-    background-color: #4FAE4F;
+    background-color: #3C8D3C;
 }
 
 .producttype>div:first-child>h2{
