@@ -47,11 +47,11 @@ body{
     background-image: url(../photos/index/index_banner_4-1.png);
     background-repeat: no-repeat;
     background-position: center;
-    width: 95px;
-    height: 95px;
+    width: 100%;
+    height: 100%;
     position: absolute;
-    top: 22px;
-    right: 22px;
+    top: 0;
+    right: 0;
 }
 .banner>img:nth-child(1){
     position: absolute;
@@ -70,6 +70,76 @@ body{
     top: 30px;
     right: 240px;
     z-index: 10;
+}
+
+/* 手機板banner圖片 */
+@media (max-width:768px){
+    .banner{
+        width: 600px;
+        padding-top: 0px;
+        padding-bottom: 40px;
+        margin-top: 30px;
+    }
+
+    .banner_container{
+        width: 600px;
+        height: 350px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .banner_container>img{
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+
+    }
+    .banner_sun{
+        width: 100px;
+        height: 100px;
+        top: 30px;
+        left:-40px;
+    }
+
+    .banner_sun>div:first-child{     
+       width: 100px;
+       height: 100px;
+       background-size: cover;
+    }
+    
+    .banner_sun>div:last-child{ 
+        background-size: cover;
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        top: 14px;
+        left: 14.5px;
+    }
+
+    .banner>img:nth-child(1){
+        width: 150px;
+        height: 150px;
+        background-size: cover;
+        bottom: -50px;
+        right: 60px;
+    }
+    .banner>img:nth-child(2){
+        position: absolute;
+        top: -50px;
+        right: 50px;
+        z-index: 10;
+        width: 75px;
+        height: 75px;
+        background-size: cover;
+    }
+    
+    .banner>img:nth-child(3){
+        position: absolute;
+        top: -50px;
+        right: 160px;
+        z-index: 10;
+    }
+
 }
 
 
@@ -112,10 +182,23 @@ body{
     /* color: rgb(48, 92, 78); */
     font-size: 40px;
     position: relative;
-    /* bottom: -50px; */
     opacity: 0;
     animation: banner_title 1s 1.5s linear forwards; 
 }
+
+/* 手機板banner文字 */
+@media (max-width:768px){
+    .banner_text p{
+        width: 220px;
+        font-size: 24px;
+
+    }
+    .banner_text span{
+        font-size: 28px;
+        animation: banner_title_rwd 1s 1.5s linear forwards; 
+    }
+}
+
 
 @keyframes banner_text_border{
     0%{
@@ -136,6 +219,16 @@ body{
     100%{
         opacity: 1;
         bottom: -50px;
+    }
+}
+@keyframes banner_title_rwd{
+    0%{
+        opacity: 0;
+        bottom: 0px;
+    }
+    100%{
+        opacity: 1;
+        bottom: -40px;
     }
 }
 
@@ -168,6 +261,26 @@ body{
 
 .aboutus_pic img:hover{
     transform: scale(1.1);
+}
+
+@media (max-width:768px){
+    .aboutus{
+        width: 600px;
+        margin-top: 30px;
+        padding-bottom: 0;
+    }
+    .aboutus_pic{
+        width: 350px;
+        height: 200px;
+        background-image: url(../photos/index/index_aboutus_rwd.png);
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px;
+    }
+
+    .aboutus_pic>div{
+        display: none;
+    }
 }
 
 
@@ -213,6 +326,24 @@ body{
     
 }
 
+@media (max-width:768px){
+    .aboutus p{
+        width: 200px;
+    }
+
+    .aboutus h3{
+        width: 400px;
+        font-size: 28px;
+        top: 90px;
+        left: -250px;
+        z-index: 2;
+    }
+
+    .aboutus_text>div{
+        z-index: 3;
+    }
+}
+
 /* 商品種類 */
 .producttype{
     width: 1200px;
@@ -249,15 +380,22 @@ body{
     background-size: cover;
     background-position: center;
 }
-
-
-
 .producttype_title{
     width: 150px;
     height: 60px;
     background-color: #E7F1DC;
     position: absolute;
     right: -20px;
+    top: 20px;
+    z-index: 3;
+}
+
+.producttype_block:nth-child(2) .producttype_title{
+    width: 150px;
+    height: 60px;
+    background-color: #E7F1DC;
+    position: absolute;
+    left: -20px;
     top: 20px;
     z-index: 3;
 }
@@ -271,16 +409,6 @@ body{
     position: absolute;
     right: 0px;
     top: 60px;
-}
-
-.producttype_block:nth-child(2) .producttype_title{
-    width: 150px;
-    height: 60px;
-    background-color: #E7F1DC;
-    position: absolute;
-    left: -20px;
-    top: 20px;
-    z-index: 3;
 }
 
 .producttype_block:nth-child(2) .producttype_title::after{
@@ -343,8 +471,63 @@ body{
     padding-right: 10px;
 }
 
+/* 商品種類_手機板區塊 */
+@media(max-width:768px){
+    .producttype{
+        margin-top: 40px;
+        width: 600px;
+    }
+    .producttype_block{
+        align-items: flex-end;
+        width: 600px;
+        margin-top: 10px;
+
+    }
+    .producttype_main img{
+        width: 250px;
+    }
+
+    .producttype_smallpic>div{
+        width: 350px;
+    }
+    .producttype_smallpic>div img{
+        width: 160px;
+        height: 130px;
+    }
+
+    .producttype_smallpic p{
+        line-height: 30px;
+        padding: 10px 10px;
+        width: 80%;    
+    }
+
+    .producttype_block:nth-child(2) .producttype_smallpic img{
+        padding: 0;
+    }
+
+    .producttype_smallpic:nth-child(2) img{
+        width: 160px;
+        height: 130px;
+        background-size: cover;
+    }
+
+    .producttype_main>.producttype_title,
+    .producttype_block:nth-child(2) .producttype_title{
+        height: 40px;
+        width: 100px;
+    }
+
+    .producttype_title>h3{
+        line-height: 40px;
+    }
+
+    .producttype_title::after,
+    .producttype_block:nth-child(2) .producttype_title::after{
+        top: 40px;
+    }
+}
+
 .producttype_text{
-    /* border: 1px solid red; */
     width: 600px;
     margin: auto 0;
     display: flex;
@@ -367,6 +550,13 @@ body{
 
 .producttype img{
     transition: 1s;
+}
+
+@media(max-width:768px){
+    .producttype_text{
+        width: 250px;
+        border: 1px solid #000; 
+    }
 }
 
 /* hover區塊設定 */
@@ -408,6 +598,16 @@ body{
     transform: scale(.999);
 }
 
+@media (max-width:768px){
+    .producttype_hover p{
+        font-size: 16px;
+    }
+
+    .producttype_hover{
+        transform: scale(1);
+        backdrop-filter: blur(0px);
+    }
+}
 
 
 
@@ -427,6 +627,8 @@ body{
     justify-content: center;
 }
 .news{
+    width: 100%;
+    max-width: 1200px;
     display:flex;
     justify-content: center;
     flex-direction: column;
@@ -481,6 +683,22 @@ body{
     align-items: center;
 }
 
+@media(max-width:768px){
+    .news_main{
+        width: 600px;
+        gap: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .news_bg{
+        margin: auto;
+        background: none;
+        align-items: center;
+    }
+}
+
 /* 各區塊h2標題樣式 */
 h2{
     text-align: center;
@@ -517,4 +735,21 @@ h2{
 
 .producttype>div:first-child>h2{
     width: 350px;
+}
+
+@media (max-width:768px){
+    h2{
+        line-height: 40px;
+    }
+
+
+    .aboutus_text>div>h2:first-child::after,
+.producttype>div>h2:first-child::after,
+.news>div:first-child>h2:first-child::after{
+    height: 2px;
+}
+
+.producttype>div:first-child>h2{
+    width: 250px;
+}
 }

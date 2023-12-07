@@ -42,6 +42,29 @@ p, ul, li:not(.footer p,ul,li), button{
     letter-spacing: 2px;
 }
 
+@media(max-width:768px){
+    h1{
+        font-size: 26px;
+    }
+    h2{
+        font-size: 22px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    h4{
+        font-size: 16px;
+    }
+    p, ul, li:not(.footer p,ul,li), button{
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    h1,h2{
+        line-height: 40px;
+    }
+}
+
 ul{
 list-style: none;
 padding: 0;
@@ -99,7 +122,8 @@ nav{
     padding: 5px;
 }
 .mynav{
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     padding: 10px 0;
     display: flex;
     justify-content: space-around;
@@ -111,7 +135,7 @@ nav{
 .mynav>ul{
     display: flex;
     width: 650px;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .mynav_list::after{
@@ -126,7 +150,7 @@ nav{
 
 .mynav_list:not(.mynav_list:first-child):hover::after{
     transition: 0.3s;
-    transform: scaleX(1);    
+    transform: scaleX(0.8);    
 }
 
 .mynav_icon{
@@ -148,6 +172,69 @@ nav{
 
 .mynav_list{
     text-align: center;
+}
+
+.mynav>label, .mynav>input{
+    display: none;
+}
+
+@media(max-width:768px){
+
+    .mynav>input{
+        display: none;
+    }
+
+    .mynav>label{
+        display: block;
+    }
+
+    .mynav{
+        width: 600px;
+        position: relative;
+    }
+
+    .logo img{
+        width: 150px;
+    }
+
+    .mynav>ul{
+        justify-content: space-evenly;
+        flex-direction: column;
+        position: absolute;
+        width: 150px;
+        bottom: -182px;
+        right: 0;
+        display: none;
+    }
+    .mynav>ul img{
+        display: block;
+    }
+
+    .mynav>ul>li{
+        margin: 10px;
+    }
+
+    .mynav_icon{
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+    }
+    input#nav_list:checked~.nav_ul{
+        display: block;
+        background-color: rgba(255,255,255,.6); 
+        backdrop-filter: blur(10px);
+    }
+
+    .mynav_list:hover::after{
+        transition: 0.3s;
+        transform: scaleX(0.8);    
+    }
+}
+
+@media(max-width:400px){
+    .mynav{
+        width: 400px;
+    }
 }
 
 
@@ -182,6 +269,7 @@ nav{
 
 
 
+
 /* footer */
 footer{
     background-color: #3C8D3C;
@@ -193,7 +281,6 @@ footer{
     position: relative;
     display: flex;
     flex-direction: column;
-    /* border-radius: 900px 900px 0% 0%/140px 140px 0% 0%; */
     
 }
 
@@ -243,7 +330,6 @@ footer{
 .footer p, .footer_followus a{
     color: #fff;
     font-family: '微軟正黑體';
-    line-height: 40px;
     text-align: left;
 }
 .footer h4{
@@ -264,4 +350,34 @@ footer{
     line-height: 40px;
 }
 
+@media(max-width:768px){
+   .footer{
+        width: 600px;
+        padding: 30px 0;
+    }
+    .footer_main{
+        flex-wrap: wrap;
+    }
+    .footer_title{
+        width: 100%;
+        border: none;
+        padding-bottom: 30px;
+        border-bottom: 2px solid #fff;
+    }
 
+    .footer_icon img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer_contact{
+        padding: 20px 0;
+        width: 50%;
+    }
+
+    .footer_followus{
+        padding: 20px 0;
+        width: 50%;
+    }
+
+}

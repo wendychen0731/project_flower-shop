@@ -5,11 +5,22 @@ body{
 }
 
 .class{
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
+    height: 750px;
     margin: auto;
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 120px;
+}
+.class img{
+    width: 550px;
+    height: 360px;
+    border-radius: 20px;
+    background-position: center;
+    background-size: contain;
 }
 
 .title_block{
@@ -19,7 +30,7 @@ body{
     justify-content: space-between;
     background-color: #FFCD84;
     border-radius: 20px;
-    padding: 0 40px;
+    padding: 0 20px;
 }
 
 .title_block h3, .title_block p{
@@ -27,11 +38,10 @@ body{
     line-height: 70px;
 }
 
-.demonstrate{
+.demonstrate, .class_right>ul{
     /* border: 1px solid #000; */
     padding-left: 20px;
 }
-
 
 ul.target, .class_right ul{
     letter-spacing: 2px;
@@ -58,23 +68,25 @@ ul.target>li, .class_right ul>li{
     margin-top: -6px;
 }
 
-.class img{
-    border-radius: 20px;
-    background-position: center;
-    background-size: contain;
-}
+
 
 .class_left{
     width: 550px;
 }
 
 .class_right{
-    margin-left: 10px;
-    width: 640px;
+    width: 550px;
+    padding-top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-content: space-between;
 
+}
+
+
+.class_right>ul{
+    padding-bottom: 50px;   
 }
 
 .class_btn{
@@ -99,30 +111,20 @@ ul.target>li, .class_right ul>li{
  button{
     background-color: #3C8D3C;
     color: #fff;
-    font-size: 24px;
     border: none;
  }
 
-.class_right_bottom{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
  .class_btn_top>p:first-child{
-    /* border: 1px solid #000; */
     text-align: center;
     line-height: 60px;
-    margin-right: 60px;
  }
 
 .class_btn{
-    /* border: 1px solid #000; */
     display: flex;
-    flex-direction: column;
+    align-items: space-between;
+    justify-content: space-between;
 }
 .class_btn_top{
-    /* border: 1px solid #000; */
     display: flex;
     justify-content: flex-start;
 }
@@ -134,10 +136,11 @@ ul.target>li, .class_right ul>li{
 
  .buy{
     border: 1px solid #3C8D3C;
-    width: 600px;
+    background-color: #3C8D3C;
+    color: #fff;
+    border-radius: 10px;
+    padding: 0 40px;
     height: 60px;
-    overflow: hidden;
-    margin-top: 20px;
     position: relative;
     z-index: 1;
     transition: all .5s linear;
@@ -145,6 +148,10 @@ ul.target>li, .class_right ul>li{
 
  .buy>p{
     transition: .5s;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 24px;
  }
 
  .buy::before{
@@ -152,6 +159,7 @@ ul.target>li, .class_right ul>li{
     width: 0;
     height: 100%;
     background-color: #fff;
+    border-radius: 10px;
     position: absolute;
     top: 0;
     left: 0;
@@ -176,10 +184,66 @@ ul.target>li, .class_right ul>li{
     justify-content: center;
  }
  .btn_group>p{
-    margin: 0 20px;
+    margin: 0 10px;
     font-size: 18px;
     padding: 0 30px;
     line-height: 60px;
     background-color: rgba(202, 219, 193, 0.5);
     /* border: 1px solid #000; */
+ }
+
+ @media(max-width: 768px){
+    .class{
+        max-width: 600px;
+        height: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+
+    .class_left,
+    .class_right{
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .title_block{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .class img{
+        width: 290px;
+        height: 200px;
+    }
+
+    .buy{
+        width: 300px;
+        height: 50px;
+     }
+
+     .btn_group>button,
+     .btn_group>p{
+        height: 50px;
+        width: 50px;
+     }
+
+     .class_btn>a>p,
+     .class_btn_top>p,
+     .btn_group>p{
+        padding: 0;
+        text-align: center;
+        line-height: 50px;
+        font-size: 20px;
+     }
+
+     .btn_group>p{
+        padding: 0;
+     }
+     .buy P, 
+     .decrease p,
+     .increase p{
+        font-size: 18px;
+     }
+    
  }

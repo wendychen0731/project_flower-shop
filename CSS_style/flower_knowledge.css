@@ -48,7 +48,8 @@ body{
 
 .menu_title>h4,
 .menu_title>ul>li{
-    font-size: 18px;
+    font-size: 24px;
+    line-height: 60px;
 }
 .menu a::after{
     content: "";
@@ -60,7 +61,7 @@ body{
 }
 
 .menu a:hover::after{
-    width: 80%;
+    width: 100%;
     transition: 0.5s;
 }
 
