@@ -66,6 +66,22 @@ body{
     }
 }
 
+@media(max-width: 440px){
+    .title{
+        width: 400px;
+    }
+    .title_text{
+        animation: none;
+        width:150px;
+        top: 30px;
+        right: 0;;
+        opacity: 1;
+    }
+    .title img{
+        width: 80%;
+    }
+}
+
 @keyframes img{
     0%{
         left: -50%;
@@ -178,6 +194,15 @@ body{
     }
 }
 
+@media(max-width: 440px){
+    .itemlist{
+        width: 400px;
+    }
+    .itemlist_side ul{
+        font-size: 14px;
+    }
+}
+
 /* 商品列表區塊 */
 .itemlist_main{
     width: 100%;
@@ -244,10 +269,16 @@ body{
     }
 }
 
+@media(max-width:440px){
+    .itemlist_main>a:nth-child(even){
+        margin-left: 0px;
+    }
+}
+
 /* 頁碼區塊 */
 .itemlist_page{
     /* border: 1px solid #000; */
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -39,6 +39,19 @@ a{
     }
 }
 
+@media (max-width:440px){
+    .label{
+        width: 400px;
+    }
+
+    .label p{
+        width: 60px;
+        font-size: 14px;
+        height: 40px;
+        line-height: 40px;
+    }
+}
+
 
 /* 主區域樣式 */
 .introduce_main{
@@ -85,6 +98,7 @@ a{
     width: 200px;
     text-align: center;
     margin: auto;
+    text-align: center;
     line-height: 60px;
     grid-area: 1/8/3/11;
 }
@@ -176,9 +190,41 @@ p{
         grid-area:6/4/11/8;
         position: relative;
         overflow: hidden;
+    } 
+    .title_block{
+        width: 600px;
     }
 }
 
+@media(max-width: 440px){
+    .introduce_main{
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text_flower{
+        height: 150px;
+    }
+
+    .pic_second{
+        order: 2;
+        margin-top: 20px;
+    }
+    p{
+        width: 300px;
+    }
+
+    .title_block{
+        width: 400px;
+    }
+
+    .title_block>h3{
+        right: 100px;
+        width: 100px;
+    }
+
+}
 
 /* 底部區域 */
 
@@ -233,42 +279,23 @@ p{
     }
 }
 
+@media (max-width: 440px){
+    .bottom_text{
+        width: 400px;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
 
-/* 底部圖片 */
-/* .bottom_pic>ul{
-    width: 1400px;
-    height: 500px;
-    display: flex;
-}
+    .bottom_text>h4,
+    .bottom_text>p{
+        margin: 0;
+    }
 
-.bottom_pic>ul>li{
-    background-size: cover;
-    background-position: center center;
-    border-radius: 10px;
-    transition: 1s;
-}
+    .bottom_link{
+        margin-top: 100px;
+        
+    }
 
-.bottom_pic>ul>li:nth-child(1){
-    background-image: url(../photos/flower_introduce/hydrangeas_1.jpg);
-    flex-grow: 1;
-    margin-right: 5px;
 }
-.bottom_pic>ul>li:nth-child(2){
-    background-image: url(../photos/flower_introduce/hydrangeas_2.jpg);
-    flex-grow: 1;
-    margin-right: 5px;
-}
-.bottom_pic>ul>li:nth-child(3){
-    background-image: url(../photos/flower_introduce/hydrangeas_3.jpg);
-    flex-grow: 1;
-    margin-right: 5px;
-}
-.bottom_pic>ul>li:nth-child(4){
-    background-image: url(../photos/flower_introduce/hydrangeas_4.jpg);
-    flex-grow: 1;
-}
-
-.bottom_pic>ul>li:hover{
-    flex-grow: 5;
-    transform: scale(1);
-} */

@@ -5,6 +5,7 @@
 
 html,body{
     scroll-behavior: smooth;
+
 }
 
 h1,h2,h3,h4,p,ul,li:not(.footer p,ul,li), a, 
@@ -79,7 +80,7 @@ p, ul, li:not(.footer p,ul,li), button{
         font-size: 14px;
     }
     p, ul, li:not(.footer p,ul,li), button{
-        font-size: 14px;
+        font-size: 12px;
         line-height: 30px;
     }
 
@@ -132,6 +133,12 @@ input[type=number]::-webkit-outer-spin-button{
 
 /* 導覽列 */
 
+.smallPanel{
+    transform: translateY(-100%);
+    overflow: hidden;
+    transition: all 1s;
+}
+
 nav{
     width: 100%;
     background-color: rgba(255,255,255,.6); 
@@ -140,7 +147,8 @@ nav{
     justify-content: center;
     position: fixed;
     top: 0;
-    z-index: 3;
+    z-index: 3;   
+    transition: all 1s; 
 }
 .mynav img:first-child{
     padding: 5px;
@@ -154,6 +162,7 @@ nav{
     align-items: center;
     top: 0;
     z-index: 2;
+
 }
 
 .mynav>ul{
@@ -213,7 +222,7 @@ nav{
     }
 
     .mynav{
-        width: 600px;
+        max-width: 600px;
         position: relative;
     }
 
@@ -255,9 +264,16 @@ nav{
     }
 }
 
-@media(max-width:400px){
+@media(max-width:440px){
+    nav{
+        max-width: 400px;
+    }
     .mynav{
-        width: 400px;
+        max-width: 400px;
+    }
+
+    .mynav_icon{
+        width: 150px;
     }
 }
 
@@ -302,8 +318,8 @@ nav{
 
 /* footer */
 footer{
-    background-color: #3C8D3C;
-    border: 1px solid #000;     
+    background-color: #3C8D3C;  
+    width: 100%;
 }
 .footer{
     width: 1200px;
@@ -384,7 +400,6 @@ footer{
 @media(max-width:768px){
    .footer{
         width: 600px;
-        background-color: #3C8D3C;
         padding: 30px 0;
     }
     .footer_main{
@@ -402,11 +417,7 @@ footer{
         height: 30px;
     }
 
-    .footer_contact{
-        padding: 20px 0;
-        width: 50%;
-    }
-
+    .footer_contact,
     .footer_followus{
         padding: 20px 0;
         width: 50%;
@@ -414,4 +425,51 @@ footer{
 
 }
 
+@media(max-width:440px){
+    .footer{
+         width: 400px;
+         padding: 20px 0;
+     }
 
+     .footer_main{
+        width: 400px;
+        align-items: center;
+     }
+     .footer_title{
+        padding-bottom: 10px;
+        border: none;
+        border-bottom: 2px solid #fff;
+     }
+
+     .footer_contact,
+     .footer_followus{
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    .footer_contact p{
+        text-align: center;
+    }
+
+    .footer_icon{
+        
+        margin-bottom: 10px;
+    }
+
+     .footer_icon img{
+        width: 25px;
+        height: 25px;
+    }
+
+    .footer_followus{
+        border-top: 2px solid #fff;
+        border-left: none;
+        padding: 20px 0;
+    }
+
+    .footer_followus>a{
+        text-align: left;
+    }
+ 
+ }
+ 

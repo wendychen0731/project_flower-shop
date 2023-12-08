@@ -20,18 +20,15 @@
 </head>
 <body>
     
-</body>
+
     <header>
 <!-- 導覽列 -->
-<nav>
+<nav  id="header">
     <div class="mynav">
         <div class="logo">
             <a href="./index.html"><img src="./photos/icon/logo.png" alt="logo"></a>
         </div>
         <input type="checkbox" id="nav_list">
-        <label for="nav_list">
-            <img src="./photos/icon/icon_list.png" alt="">
-        </label>
         <ul class="nav_ul">
             <li class="mynav_list">
                 <a href="./item_list.html" >
@@ -83,8 +80,12 @@
                 <img src="./photos/icon/icon_member.png">
             </a>
         </div>
+        <label for="nav_list">
+            <img src="./photos/icon/icon_list.png" alt="">
+        </label>
     </div>
 </nav>
+   
 </header>
 <main>
     
@@ -112,7 +113,9 @@
                     <button class="increase" onclick="qty(this)">+</button>
                 </div>
                 <p class="item_total">NT$ 1980</p>
-                <button class="cancel"><img src="./photos/icon/icon_cross.png" alt="icon"></button>
+                <button class="cancel">
+                    <img src="./photos/icon/icon_cross.png" alt="icon">
+                </button>
             </div>            
         </div>            
     </section>
@@ -199,4 +202,6 @@
         </div>
     </div>
 </footer>
+<script src="./JavaScript/nav.js"></script>
+</body>
 </html>

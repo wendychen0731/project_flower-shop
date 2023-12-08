@@ -68,6 +68,21 @@ main>h2:first-child{
 
 }
 
+@media(max-width:440px){
+   .cart{
+      width: 400px;
+
+   }
+
+   .item>div:first-child{
+      width: 150px;
+   }
+
+   .title>ul>li:nth-child(2){
+      display: none;
+   }
+}
+
 .item{
     display: flex;
     align-items: center;
@@ -97,11 +112,14 @@ main>h2:first-child{
     width: 200px;
 }
 .item_total{
-   width: 400px;
+   width: 250px;
    display: flex;
    justify-content: center;
 }
- .cancel{
+
+.cancel,
+ .cancel img{
+   transform: scale(0.8);
    background-color: rgba(0,0,0,0);
  }
 
@@ -176,12 +194,56 @@ main>h2:first-child{
       width: 300px;
    }
 
+ 
+
    .btn_group>input,
    .decrease,
    .increase{
       width: 50px;
       height: 50px;
    }
+
+ }
+
+ @media(max-width:440px){
+   .item{
+      justify-content: center;
+      align-items: center;
+   }
+
+   .item p{
+      text-align: left;
+   }
+
+   .item>div>img{
+      width: 100px;
+      height: 120px;
+   }
+
+   .btn_group{
+      margin-left: 15px;
+   }
+
+   .btn_group>input,
+   .decrease,
+   .increase{
+      width: 30px;
+      height: 30px;
+      border-radius: 5px;
+      font-size: 14px;
+      line-height: 25px;
+   }
+   li{
+      font-size: 14px;
+   }
+   .item_text>p{
+      font-size: 12px;
+   }
+
+   .item>div:first-child{
+      width: 200px;
+   }
+
 
  }
 
@@ -330,4 +392,15 @@ main>h2:first-child{
    .info_right>button{
       width: 100%;
  }
+}
+
+@media(max-width:440px){
+   .info{
+      width: 400px;
+   }
+   .info_block>p,
+   .receiver_label{
+      width: 100px;
+      margin-right: 40px;
+   }
 }
