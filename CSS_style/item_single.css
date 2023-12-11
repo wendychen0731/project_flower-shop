@@ -44,8 +44,12 @@ body{
    .item_pic{
       width: 100%;
    }
+}
 
-
+@media (max-width: 440px){
+   .item{
+      width: 400px;
+   }
 }
 
 
@@ -154,6 +158,9 @@ body{
  }
 
  @media (max-width: 768px){
+   .item_content{
+      width: 100%;
+   }
    .item_content_text>h2{
       font-size: 28px;
       margin-top: 30px;
@@ -203,6 +210,22 @@ body{
 
    .addtocart{
       margin-left: 15px;
+   }
+ }
+
+ @media (max-width: 440px){
+   .item_content_text>h2{
+      font-size: 24px;
+   }
+   .item_btn{
+      flex-direction: column;
+      height: 150px;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   .item_btn>div:last-child{
+      justify-content: space-between;
    }
  }
 
@@ -262,6 +285,17 @@ body{
     h3{
       font-size: 24px;
     }
+
+    .otheritem{
+      overflow: hidden;
+    }
+}
+
+@media (max-width: 440px){
+   .shoppingguide, .otheritem{
+      width: 400px;
+   }
+
 }
 
 /* 相似產品 */

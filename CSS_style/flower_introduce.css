@@ -10,12 +10,7 @@ body{
     display: flex;
     justify-content: space-between;
 }
-
-a{
-    color:#000;
-}
-
-.label p{
+.label button{
     font-size: 18px;
     width: 150px;
     line-height: 50px;
@@ -34,7 +29,7 @@ a{
         width: 600px;
     }
 
-    .label p{
+    .label button{
         width: 100px;
     }
 }
@@ -44,7 +39,7 @@ a{
         width: 400px;
     }
 
-    .label p{
+    .label button{
         width: 60px;
         font-size: 14px;
         height: 40px;
@@ -203,8 +198,12 @@ p{
         flex-direction: column;
     }
 
-    .text_flower{
+    .text_flower,
+    .text_outward{
         height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .pic_second{
@@ -276,6 +275,10 @@ p{
     .bottom_text{
         margin-top: 150px;
         width: 600px;
+        flex-direction: column;
+    }
+    .bottom_text h4{
+        margin-top: 20px;
     }
 }
 
@@ -283,8 +286,6 @@ p{
     .bottom_text{
         width: 400px;
         font-size: 14px;
-        display: flex;
-        flex-direction: column;
         margin-top: 50px;
     }
 

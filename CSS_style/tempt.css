@@ -3,13 +3,14 @@
     margin: 0;    
 }
 
+
 html,body{
     scroll-behavior: smooth;
 
 }
 
 h1,h2,h3,h4,p,ul,li:not(.footer p,ul,li), a, 
-input{
+input, button{
     font-family: 'Klee One';
 }
 
@@ -41,6 +42,7 @@ p, ul, li:not(.footer p,ul,li), button{
     line-height: 40px;
     font-size: 18px;
     letter-spacing: 2px;
+    
 }
 
 @media(max-width:768px){
@@ -104,6 +106,7 @@ button, button>p{
     font-size: 24px;
     border: none;
     border-radius: 10px;
+    background-color: rgba(0,0,0,0);
 }
 
 header{
@@ -290,7 +293,7 @@ nav{
     position: absolute;
     border-radius: 10px;
     max-height: 0;
-    opacity: 0;
+    display: none;
     z-index: 99; 
     /* 以免被其他區塊遮到 */
 }
@@ -303,7 +306,7 @@ nav{
 
 .mynav_list:first-child:hover .item_drop{
     max-height: 100vh;
-    opacity: 1;
+    display: block;
     transition: 1s;
 }
 

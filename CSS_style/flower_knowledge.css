@@ -65,6 +65,23 @@ body{
     transition: 0.5s;
 }
 
+@media (max-width: 768px){
+    .container{
+        width: 600px;
+    }
+
+    .menu_title{
+        display: none;
+    }
+
+}
+
+@media (max-width: 440px){
+    .container{
+        width: 400px;
+    }
+
+}
 
 /* 主要內容區塊 */
 
@@ -89,7 +106,6 @@ body{
 
 /* 主要內容照片設定 */
 .main_block>.main_block_img{
-    align-self: flex-start;
     position: relative;
     top: 172px;
 }
@@ -114,6 +130,37 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+@media (max-width: 768px){
+    .main_block{
+        width: 100%;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .main_block_img img:first-child{
+        width: 240px;
+        height: 180px;
+    }
+
+    .text_block{
+        width: 450px;
+    }
+
+    .main_block_img{
+        order: 1;
+        align-self: flex-end;
+    }
+
+    .main_block:nth-child(even){
+        flex-direction: column;
+    }
+
+    .main_block>.main_block_img{
+        top: 0;
+    }
+
 }
 
 @keyframes img{
@@ -174,5 +221,21 @@ body{
 
 .main_block:nth-child(even)>img:nth-child(2){
     bottom: -100px;
+}
 
+@media(max-width: 768px){
+    .main_block:nth-child(even)>img{
+        width: 150px;
+    }
+
+    .container{
+        background: linear-gradient(
+            #fff 0%,
+            #fff 25%,
+            #E7F1DC 25%,
+            #E7F1DC 62%,
+            #fff 62%,
+            #fff 100%
+        );
+    }
 }

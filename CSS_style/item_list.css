@@ -80,6 +80,7 @@ body{
     .title img{
         width: 80%;
     }
+
 }
 
 @keyframes img{
@@ -198,6 +199,10 @@ body{
     .itemlist{
         width: 400px;
     }
+
+    .itemlist_side{
+        width: 100px;
+    }
     .itemlist_side ul{
         font-size: 14px;
     }
@@ -270,6 +275,10 @@ body{
 }
 
 @media(max-width:440px){
+
+    .itemlist_main{
+        width: 300px;
+    }
     .itemlist_main>a:nth-child(even){
         margin-left: 0px;
     }

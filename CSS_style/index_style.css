@@ -415,11 +415,15 @@ body{
     margin-top: 20px;
     display: flex; 
     justify-content: space-between;
+
 }
 
 .producttype_block:nth-child(2){
     flex-direction: row-reverse;
+    position: relative;
 }
+
+
 
 .producttype_main img{
     width: 500px;
@@ -528,7 +532,6 @@ body{
         align-items: flex-end;
         width: 600px;
         margin-top: 10px;
-
     }
     .producttype_main img{
         width: 250px;
@@ -616,8 +619,15 @@ body{
 @media(max-width:768px){
     .producttype_text{
         width: 250px;
-        border: 1px solid #000; 
     }
+}
+
+@keyframes producttype {
+    100%{
+        opacity: 1;
+        left: 0;
+    }
+    
 }
 
 /* hover區塊設定 */
@@ -709,12 +719,12 @@ body{
     display:flex;
     justify-content: space-between;
     margin-top: 20px;
+    position: relative;
 }
 
 .news_block{
     display: flex;
     flex-direction: column;
-
 }
 
 .news_block img{
