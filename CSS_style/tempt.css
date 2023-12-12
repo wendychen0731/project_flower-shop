@@ -215,7 +215,6 @@ nav{
 }
 
 @media(max-width:768px){
-
     .mynav>input{
         display: none;
     }
@@ -268,9 +267,7 @@ nav{
 }
 
 @media(max-width:440px){
-    nav{
-        max-width: 400px;
-    }
+
     .mynav{
         max-width: 400px;
     }
@@ -311,7 +308,7 @@ nav{
 }
 
 @media (max-width:768px){
-    .item_drop{
+    .mynav_list:first-child:hover .item_drop{
         display: none;
     }
 }

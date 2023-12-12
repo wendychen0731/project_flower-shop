@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./CSS_style/normalize.css">
     <link rel="stylesheet" href="./CSS_style/tempt.css">
     <link rel="stylesheet" href="./CSS_style/class.css">
-    <link rel="stylesheet" href="./JS/button_number.js">
+    <link rel="stylesheet" href="./CSS_style/login.css">
 <!-- 英文字體 marck script -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,11 +19,37 @@
 <link href="https://fonts.googleapis.com/css2?family=Klee+One&family=Marck+Script&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="login_container" id="loginBox" style="display:none;">
+        <div class="login_main_area" id="login_main">
+            <div class="login_title">
+                <h2>會員登入</h2>
+                <h3>Login</h3>
+            </div>
+            <div class="login_block">
+                <div>
+                    <p>帳號：</p>
+                    <input type="text" placeholder="請輸入會員帳號">
+                </div>
+                <div>
+                    <p>密碼：</p>
+                    <input type="password" placeholder="請輸入密碼">
+                </div>
+                <a href="#"><span>忘記密碼?</span></a>
+            </div>
+            <div class="login_btn">
+                <a href="#" class="signup">
+                    <span>會員註冊</span>
+                </a>
+                <button class="member_login">登入</button>
+                <button class="member_cancel" id="cancelBtn">取消</button>
+            </div>
+        </div>
+    </div>
 
     <header>
 <!-- 導覽列 -->
 <nav  id="header">
+    <input type="checkbox" id="member" style="display: none;">
     <div class="mynav">
         <div class="logo">
             <a href="./index.html"><img src="./photos/icon/logo.png" alt="logo"></a>
@@ -76,9 +102,9 @@
             <a href="#" class="mynav_question">
                 <img src="./photos/icon/icon_question.png">
             </a>
-            <a href="./login.html" class="mynav_member">
+            <label for="member" class="mynav_member" id="login_icon" >
                 <img src="./photos/icon/icon_member.png">
-            </a>
+            </label>
         </div>
         <label for="nav_list">
             <img src="./photos/icon/icon_list.png" alt="">
@@ -121,9 +147,9 @@
                     <div class="class_btn_top">
                         <p>報名人數：</p> 
                         <div class="btn_group">
-                            <button class="decrease" id="number_decrease"><p>-</p></button>
-                            <p id="number">1</p>
-                            <button class="increase" id="number_increase"><p>+</p></button>
+                            <button class="decrease" id="decreaseBtn">-</button>
+                            <input type="number" value="1" max="10" min="1" oninput="if(value.length>2)value.slice=(0,2);if(value>10)value=10;if(value<0)value=0" id="qty"></input>
+                            <button class="increase" id="increaseBtn"><p>+</button>
                         </div>
                     </div>
                     <a href="./cart.html" class="buy"><p>前往報名</p></a>
@@ -171,5 +197,7 @@
     </div>
 </footer>
 <script src="./JavaScript/nav.js"></script>
+<script src="./JavaScript/itemQty.js"></script>
+<script src="./JavaScript/loginBox.js"></script>
 </body>
 </html>

@@ -108,7 +108,7 @@ ul.target>li, .class_right ul>li{
     line-height: 60px;
 }
 
- button{
+ button:not(.member_login, .member_cancel){
     background-color: #3C8D3C;
     color: #fff;
     border: none;
@@ -183,13 +183,14 @@ ul.target>li, .class_right ul>li{
     align-items: center;
     justify-content: center;
  }
- .btn_group>p{
+ .btn_group>input{
+    text-align: center;
+    border: none;
+    height: 60px;
+    width: 60px;
     margin: 0 10px;
-    font-size: 18px;
-    padding: 0 30px;
-    line-height: 60px;
     background-color: rgba(202, 219, 193, 0.5);
-    /* border: 1px solid #000; */
+    font-size: 20px;
  }
 
  @media(max-width: 768px){

@@ -133,25 +133,14 @@ main>h2:first-child{
 .btn_group>input{
     border: none;
     appearance:none;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: bold;
     text-align: center;
     width: 60px;
     margin: 0 10px;
     line-height: 60px;
-    background-color: rgba(202, 219, 193, 0.5);
     border-radius: 10px ;
 }
-.decrease, .increase{
-    width: 60px;
-    height: 60px;
-    border-radius: 10px;
-    background-color: #3C8D3C;
-    color: #fff;
- }
-
- .decrease>p, .increase>p{
-   font-size: 24px;
- }
 
  .item img:last-child{
     width:39px;

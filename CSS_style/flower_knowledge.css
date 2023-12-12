@@ -132,9 +132,13 @@ body{
     justify-content: space-evenly;
 }
 
+.text_block p{
+    text-align: justify;
+}
+
 @media (max-width: 768px){
     .main_block{
-        width: 100%;
+        width: 600px;
         flex-direction: column;
         align-content: center;
     }
@@ -145,7 +149,7 @@ body{
     }
 
     .text_block{
-        width: 450px;
+        width: 600px;
     }
 
     .main_block_img{
@@ -161,6 +165,20 @@ body{
         top: 0;
     }
 
+}
+
+@media (max-width: 440px){
+    .main_block{
+        width: 400px;
+    }
+
+    .text_block{
+        width: 400px;
+    }
+
+    .main_block_img{
+        margin-top: 20px;
+    }
 }
 
 @keyframes img{
@@ -193,6 +211,13 @@ body{
     margin: 40px 0 20px 0;
 }
 
+@media(max-width: 440px){
+    .text_block h2{
+        width: 180px;
+    }
+
+
+}
 
 /* 區塊背景設定 */
 

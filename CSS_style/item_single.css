@@ -86,7 +86,7 @@ body{
    padding-top: 15px;
  }
 
- button{
+ button.buy{
     background-color: #3C8D3C;
     color: #fff;
     font-size: 24px;
@@ -106,10 +106,9 @@ body{
 
  }
 
- .decrease, .increase{
+ .decrease>img, .increase>img{
     width: 60px;
     height: 60px;
-    border-radius: 10px;
  }
 
  .item_btn_block>input{
@@ -118,8 +117,7 @@ body{
    height: 60px;
    width: 60px;
    margin: 0 10px;
-   background-color: rgba(202, 219, 193, 0.5);
-   font-size: 20px;
+   font-size: 24px;
  }
 
  .buy, .addtocart{
@@ -169,12 +167,6 @@ body{
    .item_content_text>p{
       font-size: 20px;
     }
-
-    .decrease, .increase{
-      width: 60px;
-      height: 60px;
-      border-radius: 10px;
-   }
   
    .item_btn_block>input{
      font-size: 20px;
@@ -232,7 +224,7 @@ body{
 
  /* 備註區塊 */
 
- .shoppingguide, .otheritem{
+ .shoppingguide{
    width: 1200px;
    margin-top: 60px;
     border-top: 3px solid #3C8D3C;
@@ -245,7 +237,7 @@ body{
 
  .shoppingguide ul{
     font-family: 'Klee One';
-    margin-top: 50px;
+    margin-top: 30px;
     list-style: none;
     letter-spacing: 1px;
  }
@@ -299,11 +291,38 @@ body{
 }
 
 /* 相似產品 */
-.otheritem>ul{
+.otheritem{
+   width: 1200px;
    display: flex;
    align-items: center;
-   justify-content: space-evenly;
+   justify-content: center;
+}
+
+.otheritem>img{
+   width: 40px;
+   height: 40px;
+}
+main>h3{
+   width: 1200px;
+   text-align: left;
    margin-top: 60px;
+   border-top: 3px solid #3C8D3C;
+   padding-top: 20px;
+}
+
+.otheritem_block{
+   width: 858px;
+   overflow: hidden;
+}
+.otheritem_block>ul{
+   display: flex;
+   align-content: start;
+   margin-top: 60px;
+   position: relative;
+}
+
+.otheritem_block>ul>li{
+   float: left;
 }
 
 .otheritem h4,.otheritem p{
@@ -313,4 +332,59 @@ body{
 .otheritem h4{
    font-size: 24px;
    font-weight: bold;
+}
+
+.otheritem img{
+   margin: 0 10px;
+   border-radius: 20px;
+}
+
+@media(max-width: 768px){
+   .otheritem{
+      width: 600px;
+   }
+   main>h3{
+      width: 600px;
+   }
+
+   .otheritem h4,.otheritem p{
+      font-size: 18px;
+      letter-spacing: 0;
+   }
+
+   .otheritem_block{
+      width: 500px;
+   }
+
+   .otheritem_block img{
+      width: 142px;
+      height: 142px;
+   }
+
+
+   .otheritem>button>img{
+      width: 30px;
+      height: 30px;
+   }
+}
+@media(max-width: 440px){
+   .otheritem{
+      width: 400px;
+   }
+   main>h3{
+      width: 400px;  
+   }
+   .otheritem h4,.otheritem p{
+      font-size: 12px;
+   }
+
+   .otheritem_block img{
+      width: 75px;
+      height: 75px;
+   }
+
+
+   .otheritem img{
+      margin: 0 10px;
+   }
 }
