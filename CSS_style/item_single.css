@@ -374,6 +374,16 @@ main>h3{
    main>h3{
       width: 400px;  
    }
+
+   .otheritem_block{
+      width: 300px;
+   }
+
+   .otheritem_block img{
+      width: 80px;
+      height: 80px;
+   }
+
    .otheritem h4,.otheritem p{
       font-size: 12px;
    }
