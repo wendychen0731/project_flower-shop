@@ -48,7 +48,6 @@
     <header>
 <!-- 導覽列 -->
 <nav  id="header">
-    <input type="checkbox" id="member" style="display: none;">
     <div class="mynav">
         <div class="logo">
             <a href="./index.html"><img src="./photos/icon/logo.png" alt="logo"></a>
@@ -105,7 +104,7 @@
                 <img src="./photos/icon/icon_member.png">
             </label>
         </div>
-        <label for="nav_list">
+        <label id="navList">
             <img src="./photos/icon/icon_list.png" alt="">
         </label>
     </div>
@@ -116,14 +115,21 @@
         <div class="item">
             <div class="item_pic">
                 <div class="item_mainpic">
-                    <img src="./photos/item_single/item_single_mainpic.png" alt="rose_bouquet">
+                    <img src="./photos/item_single/item_single_mainpic1.png" alt="rose_bouquet" id="item_mainImg">
                 </div>
                 <div class="item_smallpic">
-                    <img src="./photos/icon/icon_arrow_left.png" alt="icon_letfarrow">
-                    <img src="./photos/item_single/item_single_smallpic (1).jpg" alt="rose_bouquet">
-                    <img src="./photos/item_single/item_single_smallpic (2).jpg" alt="rose_bouquet">
-                    <img src="./photos/item_single/item_single_smallpic (3).jpg" alt="rose_bouquet">
-                    <img src="./photos/icon/icon_arrow_right.png" alt="icon_rightarrow">
+                    <button id="main_sliderL"><img src="./photos/icon/icon_arrow_left.png" alt="icon_letfarrow"></button>
+                    <div class="smallpic_block">
+                        <ul>
+                            <li><img src="./photos/item_single/item_single_mainpic1.png" alt="rose_bouquet" class="smallimg"></li>
+                            <li><img src="./photos/item_single/item_single_mainpic2.png" alt="rose_bouquet" class="smallimg"></li>
+                            <li><img src="./photos/item_single/item_single_mainpic3.png" alt="rose_bouquet" class="smallimg"></li>
+                            <li><img src="./photos/item_single/item_single_mainpic4.png" alt="rose_bouquet" class="smallimg"></li>
+                            <li><img src="./photos/item_single/item_single_mainpic5.png" alt="rose_bouquet" class="smallimg"></li>
+                        </ul>
+                    </div>
+                    
+                    <button id="main_sliderR"><img src="./photos/icon/icon_arrow_right.png" alt="icon_rightarrow"></button>
                 </div>
             </div>
             <div class="item_content">
@@ -260,12 +266,11 @@
         </div>
     </div>
 </footer>
-
+<script src="./JavaScript/jquery-3.7.1.js"></script>
 <script src="./JavaScript/nav.js"></script>
 <script src="./JavaScript/itemQty.js"></script>
 <script src="./JavaScript/loginBox.js"></script>
-<script src="./JavaScript/jquery-3.7.1.js"></script>
-<script href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="./JavaScript/itemSingle_slider.js"></script>
+<script src="./JavaScript/itemSingle_changeimg.js"></script>
 </body>
 </html>

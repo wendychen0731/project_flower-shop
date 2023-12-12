@@ -1,5 +1,6 @@
+// 按鈕切換更改內容
 function roseBtn(){
-    document.getElementById("mainTitle").innerText="玫瑰花";
+    document.getElementById("mainTitle").innerText="玫瑰";
     document.getElementById("title").innerText="Rose";
    document.getElementById("outward").innerText="玫瑰為落葉灌木，有邊刺。花有紫紅色、白色，花期5-6月";
    document.getElementById("textFlower").innerText="紅色玫瑰象徵濃烈的愛情和熱情;粉紅色玫瑰象徵溫柔、純真; 白色玫瑰則為純潔、無暇的象徵";
@@ -23,7 +24,7 @@ function eustomaBtn(){
 }
 
 function hydrangeasBtn(){
-    document.getElementById("mainTitle").innerText="繡球花";
+    document.getElementById("mainTitle").innerText="繡球";
     document.getElementById("title").innerText="Hydrangeas";
    document.getElementById("outward").innerText="花朵碩大，顏色繽紛，顏色根據土壤決定，有綠色、白色、粉色、紫色、藍色等。";
    document.getElementById("textFlower").innerText="繡球花的花語根據顏色而不同。   粉紅色象徵「有活力的女性」、藍色象徵「堅毅不搖的愛」、綠色象徵「專一的愛」。";
@@ -35,7 +36,7 @@ function hydrangeasBtn(){
 }
 
 function lilyBtn(){
-    document.getElementById("mainTitle").innerText="百合花";
+    document.getElementById("mainTitle").innerText="百合";
     document.getElementById("title").innerText="Lily";
    document.getElementById("outward").innerText="百合的形狀、顏色、香味和品種都很特別。由於鮮花盛放時花朵很大，頗具觀賞性，因此百合花 常常在花束製作中被用作主花。";
    document.getElementById("textFlower").innerText="花語是純潔、莊嚴，以及財富與榮耀，因此百合花一直是古今中外相當受歡迎的花卉。";
@@ -67,4 +68,10 @@ window.addEventListener("load", function(){
     document.getElementById("lilyBtn").onclick=lilyBtn;
     document.getElementById("hydrangeasBtn").onclick=hydrangeasBtn;
     document.getElementById("orchidBtn").onclick=orchidBtn;
+})
+
+
+// 內容出現效果
+$(function(){
+    
 })

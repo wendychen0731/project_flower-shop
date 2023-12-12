@@ -142,10 +142,11 @@ main>h2:first-child{
     border-radius: 10px ;
 }
 
- .item img:last-child{
-    width:39px;
-    height:39px;
- }
+button.decrease>img,
+button.increase>img{
+   width: 40px;
+   height: 40px;
+}
 
  .item_unitprice{
     text-align: right;
@@ -181,15 +182,6 @@ main>h2:first-child{
 
    .btn_group{
       width: 300px;
-   }
-
- 
-
-   .btn_group>input,
-   .decrease,
-   .increase{
-      width: 50px;
-      height: 50px;
    }
 
  }

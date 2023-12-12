@@ -25,12 +25,46 @@ body{
     overflow: hidden;
 }
 
+#bannerImg{
+    position: relative;
+    display: flex;
+}
+
+#bannerImg>li{
+    float: left;
+}
+
+#bannerBtn li{
+	width: 20px;
+	height: 20px;
+	background-color: #ccc;
+	border-radius: 50%;
+	display: inline-block;
+	margin: 8px;
+}
+
+#bannerBtn li.clicked{
+	background-color: #666;
+    z-index: 10;
+}
+
+#bannerBtn{
+	/* ul */
+	/* 讓按鈕置中對齊 */
+	text-align: center;
+	width: 100%;
+	height: 50px;
+}
+
+/* banner_插圖 */
+
 .banner_sun{
     width: 140px;
     height: 140px;
     position: absolute;
     top: 120px;
     left:70px;
+    z-index: 5;
 }
 .banner_sun>div:first-child{     
     background-image: url(../photos/index/index_banner_4-2.png);
@@ -78,7 +112,6 @@ body{
         width: 600px;
         padding-top: 0px;
         padding-bottom: 40px;
-        margin-top: 30px;
     }
 
     .banner_container{
@@ -88,11 +121,8 @@ body{
         overflow: hidden;
     }
 
-    .banner_container>img{
+    .banner_container>ul>li>img{
         width: 100%;
-        background-position: center;
-        background-size: cover;
-
     }
     .banner_sun{
         width: 100px;
@@ -138,6 +168,11 @@ body{
         top: -50px;
         right: 160px;
         z-index: 10;
+    }
+
+    #bannerBtn li{
+        width: 15px;
+        height: 15px;
     }
 
 }
@@ -274,23 +309,23 @@ body{
     align-items: center;
     justify-content: space-between;
 }
-.aboutus_pic{
+.aboutus_block>div{
     width: 800px;
     display: flex;
     gap: 15px;
     align-items: center;
 }
 
-.aboutus_pic>div{
+.aboutus_img{
     overflow: hidden;
 }
 
-.aboutus_pic img{
+.aboutus_block>div img{
     transition: 1s;
     vertical-align: middle;
 }
 
-.aboutus_pic img:hover{
+.aboutus_block>div img:hover{
     transform: scale(1.1);
 }
 
@@ -300,16 +335,20 @@ body{
         margin-top: 30px;
         padding-bottom: 0;
     }
-    .aboutus_pic{
-        width: 350px;
+
+    .aboutus_block>div{
+        width: 50%;
+    }
+    .aboutus_block>div:first-child{
         height: 200px;
         background-image: url(../photos/index/index_aboutus_rwd.png);
         background-size: cover;
         background-position: center;
         border-radius: 15px;
+        margin: 0;
     }
 
-    .aboutus_pic>div{
+    .aboutus_img{
         display: none;
     }
 }
@@ -318,13 +357,13 @@ body{
     .aboutus{
         width: 400px;
     }
-
-    .aboutus_pic{
-        width: 400px;
-    }
-
     .aboutus_block{
         align-items: center;
+    }
+
+    .aboutus_block>div:first-child{
+        width: 60%;
+        height: 250px;
     }
 
 }
@@ -384,9 +423,7 @@ body{
         z-index: 2;
     }
 
-    .aboutus_text>div{
-        z-index: 3;
-    }
+
 }
 
 @media(max-width:440px){}

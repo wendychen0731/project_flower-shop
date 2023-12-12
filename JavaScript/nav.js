@@ -5,3 +5,10 @@ window.addEventListener("scroll", function(){
         document.getElementById("header").classList.remove("smallPanel")
     }
 })
+
+$(function(){
+    $("#navList").click(function(){
+        $(".nav_ul").fadeToggle(500);
+    })
+
+})

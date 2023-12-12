@@ -15,7 +15,7 @@ body{
     justify-content: space-between;
     margin-bottom: 120px;
 }
-.class img{
+.class>img{
     width: 550px;
     height: 360px;
     border-radius: 20px;
@@ -107,13 +107,6 @@ ul.target>li, .class_right ul>li{
     font-size: 24px;
     line-height: 60px;
 }
-
- button:not(.member_login, .member_cancel){
-    background-color: #3C8D3C;
-    color: #fff;
-    border: none;
- }
-
  .class_btn_top>p:first-child{
     text-align: center;
     line-height: 60px;
@@ -189,8 +182,12 @@ ul.target>li, .class_right ul>li{
     height: 60px;
     width: 60px;
     margin: 0 10px;
-    background-color: rgba(202, 219, 193, 0.5);
-    font-size: 20px;
+    font-size: 24px;
+ }
+
+ .btn_group>button>img{
+    width: 40px;
+    height: 40px;
  }
 
  @media(max-width: 768px){
@@ -213,7 +210,7 @@ ul.target>li, .class_right ul>li{
         margin-bottom: 20px;
     }
 
-    .class img{
+    .class>img{
         width: 290px;
         height: 200px;
     }

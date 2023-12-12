@@ -51,7 +51,7 @@
 <header>
     <!-- 導覽列 -->
 <nav  id="header">
-    <input type="checkbox" id="member" style="display: none;">
+
     <div class="mynav">
         <div class="logo">
             <a href="./index.html"><img src="./photos/icon/logo.png" alt="logo"></a>
@@ -108,7 +108,7 @@
                 <img src="./photos/icon/icon_member.png">
             </label>
         </div>
-        <label for="nav_list">
+        <label id="navList">
             <img src="./photos/icon/icon_list.png" alt="">
         </label>
     </div>
@@ -126,47 +126,54 @@
             <div></div>
             <div></div>
         </div>
-        <div class="banner_container">
-            <img src="./photos/index/index_banner.png" alt="banner">
+        <div class="banner_container" id="bannerDiv">
+            <ul id="bannerImg">
+                <li><img src="./photos/index/index_banner_main_1.png" alt="banner"></li>
+                <li><img src="./photos/index/index_banner_main_2.png" alt="banner"></li>
+                <li><img src="./photos/index/index_banner_main_3.png" alt="banner"></li>
+            </ul>            
             <div class="banner_text">
                 <p>為生活添一抹<span>綠意</span></p>
             </div>
         </div>
+        <ul id="bannerBtn">
+
+        </ul>
     </section>
     <!-- 關於我們 -->
     <section class="aboutus">
         <div class="aboutus_block">
-            <div class="aboutus_pic">
-                <div>
+            <div>
+                <div class="aboutus_img">
                     <img src="./photos/index/index_aboutus_1.png" alt="aboutus_pic">
                 </div>
-                <div>
+                <div class="aboutus_img">
                     <img src="./photos/index/index_aboutus_2.png" alt="aboutus_pic">
                 </div>
-                <div>
+                <div class="aboutus_img">
                     <img src="./photos/index/index_aboutus_3.png" alt="aboutus_pic">
                 </div>
-                <div>
+                <div class="aboutus_img">
                     <img src="./photos/index/index_aboutus_4.png" alt="aboutus_pic">
                 </div>
-                <div>
+                <div class="aboutus_img">
                     <img src="./photos/index/index_aboutus_5.png" alt="aboutus_pic">
                 </div>
-                <div>
+                <div class="aboutus_img">
                     <img src="./photos/index/index_aboutus_6.png" alt="aboutus_pic">
                 </div>
-                <div>
+                <div class="aboutus_img">
                     <img src="./photos/index/index_aboutus_7.png" alt="aboutus_pic">
                 </div>
             </div>    
-                <div class="aboutus_text">
-                    <h3 class="aboutus_storename">Sunlight Floral Shop</h3>
-                    <div>
-                        <h2>關於我們</h2>
-                        <h2>About us</h2>
-                    </div>
-                    <p>主要販售花束、盆花及永生花相關商品，重視顧客需求，設計專屬花藝品，為生活注入溫度</p>
+            <div class="aboutus_text">
+                <h3 class="aboutus_storename">Sunlight Floral Shop</h3>
+                <div>
+                    <h2>關於我們</h2>
+                    <h2>About us</h2>
                 </div>
+                <p>主要販售花束、盆花及永生花相關商品，重視顧客需求，設計專屬花藝品，為生活注入溫度</p>
+            </div>
         </div>
     </section>
 <!-- 商品種類 -->
@@ -307,8 +314,11 @@
         </div>
     </div>
 </footer>
+<script src="./JavaScript/jquery-3.7.1.js"></script>
 <script src="./JavaScript/nav.js"></script>
 <script src="./JavaScript/loginBox.js"></script>
+<script src="./JavaScript/index_bannerSlider.js"></script>
+<script src="./JavaScript/indexScroll.js"></script>
 </body>
 
 </html>

@@ -110,12 +110,13 @@ button, button>p{
 }
 
 header{
-    width: 100%;
+    top: 0;
+    z-index: 5;
 }
 main{
     width: 100%;
     margin: 0 auto;
-    margin-top: 120px;
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -148,10 +149,10 @@ nav{
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: center;
-    position: fixed;
-    top: 0;
     z-index: 3;   
     transition: all 1s; 
+    position: fixed;
+    top: 0;
 }
 .mynav img:first-child{
     padding: 5px;
@@ -254,8 +255,7 @@ nav{
         display: flex;
         justify-content: space-between;
     }
-    input#nav_list:checked~.nav_ul{
-        display: block;
+    .nav_ul{
         background-color: rgba(255,255,255,.6); 
         backdrop-filter: blur(10px);
     }
@@ -267,7 +267,9 @@ nav{
 }
 
 @media(max-width:440px){
-
+    header{
+        position: static;
+    }
     .mynav{
         max-width: 400px;
     }
