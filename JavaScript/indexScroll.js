@@ -15,7 +15,7 @@ $(function(){
 
 		$(".producttype_block:nth-child(even)").css({
 			position:"relative",
-			left: 500,
+			right: -500,
 			opacity: 0,
 		})
 
@@ -46,12 +46,12 @@ $(function(){
 
 				if($(window).scrollTop() >= (areaTop + showHeight) - $(window).height() ){
 					setThis.stop().animate({
-						left:0,
+						right:0,
 						opacity: 1,
 					}, 800)
 				}else{
 					setThis.stop().animate({
-						left: 500,
+						right: -500,
 						opacity: 0,
 					}, 800)
 				}
@@ -63,9 +63,15 @@ $(function(){
 	// ------------------------------------------------------------------------------
 	// 關於我們區塊
 	if ($(window).width()>800){	
-		$(".aboutus_img").css({
+		$(".aboutus_img:nth-child(odd)").css({
 			position:"relative",
 			top: -300,
+			opacity: 0,
+		})
+
+		$(".aboutus_img:nth-child(even)").css({
+			position:"relative",
+			bottom: -300,
 			opacity: 0,
 		})
 
@@ -94,12 +100,12 @@ $(function(){
 
 				if($(window).scrollTop() >= (areaTop + showHeight) - $(window).height() ){
 					setThis.stop().animate({
-						top:0,
+						bottom:0,
 						opacity: 1,
 					}, 1000)
 				}else{
 					setThis.stop().animate({
-						top: -300,
+						bottom: -300,
 						opacity: 0,
 					}, 1000)
 				}
@@ -130,12 +136,12 @@ $(function(){
 
 				if($(window).scrollTop() >= (areaTop + showHeight) - $(window).height() ){
 					setThis.stop().animate({
-						top:0,
+						bottom:0,
 						opacity: 1,
 					}, 1400)
 				}else{
 					setThis.stop().animate({
-						top: -300,
+						bottom: -300,
 						opacity: 0,
 					}, 1400)
 				}
@@ -165,12 +171,12 @@ $(function(){
 
 				if($(window).scrollTop() >= (areaTop + showHeight) - $(window).height() ){
 					setThis.stop().animate({
-						top:0,
+						bottom:0,
 						opacity: 1,
 					}, 1800)
 				}else{
 					setThis.stop().animate({
-						top: -300,
+						bottom: -300,
 						opacity: 0,
 					}, 1800)
 				}

@@ -124,13 +124,13 @@
                 <li>小計</li>
             </ul>
         </div>
-        <div class="itemarea">
+        <div class="itemarea" id="cartItem">
             <div class="item">
                 <div>
                     <img src="./photos/item_list/item_list_3.jpg" alt="item_photo">
                     <div class="item_text">
-                        <p class="item_name">牡丹百合-陶瓶(白)</p>
-                        <p class="item_unitprice"> $1980</p>
+                        <p class="item_name" id="cartItemName">牡丹百合-陶瓶</p>
+                        <span> $ </span><input id="cartItemPrice" value="1980" disabled readonly class="cart_unitprice"></input>
                     </div>
                 </div>
                 <div class="btn_group">
@@ -138,7 +138,7 @@
                     <input type="number" id="qty" value="1" max="10" min="1"oninput="if(value.length>2)value.slice=(0,2);if(value>10)value=10;if(value<0)value=0"></input>
                     <button class="increase"><img src="./photos/icon/icon_plus.png" alt="icon_plus"></button>
                 </div>
-                <p class="item_total">NT$ 1980</p>
+                <p class="item_total">NT$ <input id="cartTotalPrice" value="1980" disabled readonly class="cart_totalprice"></input></p>
                 <button class="cancel">
                     <img src="./photos/icon/icon_cross.png" alt="icon">
                 </button>

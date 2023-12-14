@@ -134,7 +134,7 @@ body{
  }
 
  button.buy{
-    background-color: #3C8D3C;
+    background-color: #317331;
     color: #fff;
     font-size: 24px;
     border: none;
@@ -185,9 +185,9 @@ body{
  }
 
  .addtocart{
-   border: 3px solid #3C8D3C;
+   border: 3px solid #317331;
    background-color: #fff;
-   color: #3C8D3C;
+   color: #317331;
    width: 200px;
  }
 
@@ -286,7 +286,7 @@ body{
  .shoppingguide{
    width: 1200px;
    margin-top: 60px;
-    border-top: 3px solid #3C8D3C;
+    border-top: 3px solid #317331;
     padding: 40px;
     display: flex;
     flex-direction: column;
@@ -365,7 +365,7 @@ main>h3{
    width: 1200px;
    text-align: left;
    margin-top: 60px;
-   border-top: 3px solid #3C8D3C;
+   border-top: 3px solid #317331;
    padding-top: 20px;
 }
 

@@ -11,6 +11,8 @@ body{
    background-attachment: fixed;
 }
 
+
+
 .cart{
     /* border: 1px solid #000; */
     width: 1200px;
@@ -21,14 +23,14 @@ main>h2:first-child{
     width: 200px;
     
     text-align: center;
-    border-bottom: 3px solid #3C8D3C;
+    border-bottom: 3px solid #317331;
     margin: auto;
 }
 
 .title{
     /* border: 1px solid #000; */
     margin-top: 60px;
-    background-color: #3C8D3C;
+    background-color: #317331;
     display: flex;
 }
 
@@ -136,16 +138,13 @@ main>h2:first-child{
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    width: 60px;
-    margin: 0 10px;
-    line-height: 60px;
     border-radius: 10px ;
 }
 
 button.decrease>img,
 button.increase>img{
-   width: 40px;
-   height: 40px;
+   width: 50px;
+   height: 50px;
 }
 
  .item_unitprice{
@@ -158,8 +157,15 @@ button.increase>img{
     display: block;
     width: 100%;
     height: 2px;
-    background-color: #3C8D3C;
+    background-color: #317331;
     margin: 30px 0;
+ }
+
+ input.cart_unitprice,
+ input.cart_totalprice{
+   width: 80px;
+   border: none;
+   font-size: 20px;
  }
 
  @media(max-width:768px){
@@ -184,36 +190,47 @@ button.increase>img{
       width: 300px;
    }
 
+   .decrease>img,
+   .increase>img{
+      width: 40px;
+   }
  }
 
  @media(max-width:440px){
    .item{
+      width: 100%;
       justify-content: center;
       align-items: center;
    }
 
    .item p{
       text-align: left;
+      width: 100px;
    }
 
    .item>div>img{
-      width: 100px;
-      height: 120px;
-   }
+      width: 80px;
+      height: 95px;
+      margin-right: 5px;
 
-   .btn_group{
-      margin-left: 15px;
    }
+   .btn_group>input{
 
-   .btn_group>input,
-   .decrease,
-   .increase{
-      width: 30px;
-      height: 30px;
       border-radius: 5px;
-      font-size: 14px;
+      font-size: 16px;
       line-height: 25px;
    }
+
+   .decrease>img,
+   .increase>img{
+      transform: scale(0.8);
+   }
+
+   .cancel, .cancel>img{
+      transform: scale(0.6);
+      margin: 0;
+   }
+
    li{
       font-size: 14px;
    }
@@ -225,6 +242,10 @@ button.increase>img{
       width: 200px;
    }
 
+   input.cart_unitprice,
+   input.cart_totalprice{
+      font-size: 14px;
+   }
 
  }
 
@@ -294,8 +315,8 @@ button.increase>img{
     width: 500px;
     height: 60px;
     align-self: center;
-    color: #3C8D3C;
-    border: 2px solid #3C8D3C;
+    color: #317331;
+    border: 2px solid #317331;
     background-color: rgba(0,0,0,0);
 
  }
@@ -326,7 +347,7 @@ button.increase>img{
     line-height: 60px;
  }
  .info_right>button{
-   background-color: #3C8D3C;
+   background-color: #317331;
     color: #fff;
     height: 60px;
     width: 100%;
@@ -344,7 +365,7 @@ button.increase>img{
    }
 
    .info_left{
-      border-bottom: 2px solid #3C8D3C;
+      border-bottom: 2px solid #317331;
       padding-bottom: 50px;
    
    }

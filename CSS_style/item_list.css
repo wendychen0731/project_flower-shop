@@ -120,10 +120,10 @@ body{
 
 @keyframes title_border{
     0%{
-        border-bottom: 0px solid #3C8D3C;
+        border-bottom: 0px solid #317331;
     }
     100%{
-        border-bottom: 3px solid #3C8D3C;
+        border-bottom: 3px solid #317331;
 }
 }
 
@@ -172,7 +172,7 @@ body{
     display: block;
     width: 0%;
     height: 3px;
-    background-color: #3C8D3C;
+    background-color: #317331;
     transition: 0.5s;
 }
 
