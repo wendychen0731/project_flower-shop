@@ -180,16 +180,13 @@ body{
    padding: 0 10px;
    display: flex;
    align-items: center;
-   justify-content: space-between;
+   justify-content: center;
  }
 
- .buy{
-   width: 170px;
-
- }
-
- .addtocart p{
+ .addtocart p,
+ .buy p{
    line-height: 65px;
+   margin-left: 10px;
  }
 
  .addtocart{
@@ -280,12 +277,17 @@ body{
    .item_btn>div:last-child{
       justify-content: space-between;
    }
+   .buy, .addtocart{
+      width: 45%;
+   }
 
    .increase>img,
    .decrease>img{
-      width: 30px;
-      height: 30px;
+      width: 40px;
+      height: 40px;
    }
+
+
  }
 
 
@@ -453,6 +455,7 @@ main>h3{
 
    .otheritem h4,.otheritem p{
       font-size: 12px;
+      width: 80px;
    }
 
    .otheritem_block img{
