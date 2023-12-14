@@ -8,7 +8,7 @@ window.addEventListener("scroll", function(){
 
 $(function(){
     $("#navList").click(function(){
-        $(".nav_ul").fadeToggle(500);
+        $(".nav_ul").fadeToggle(800);
     })
 
 })

@@ -6,7 +6,6 @@ $(function(){
 
 	// ---------------------------------------------------------------
 	// 商品類型區塊
-	if ($(window).width()>800){
 		$(".producttype_block:nth-child(odd)").css({
 			position:"relative",
 			left: -500,
@@ -58,11 +57,11 @@ $(function(){
 
 			})
 		})
-	}
+
             
 	// ------------------------------------------------------------------------------
 	// 關於我們區塊
-	if ($(window).width()>800){	
+	if ($(window).width()>700){	
 		$(".aboutus_img:nth-child(odd)").css({
 			position:"relative",
 			top: -300,

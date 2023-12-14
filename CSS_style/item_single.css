@@ -85,6 +85,14 @@ body{
       width: 400px;
    }
 
+   .item_smallpic{
+      width: 100%;
+   }
+
+   .item_smallpic>button{
+      padding: 0;
+   }
+
    .item_smallpic>button>img{
       width: 30px;
       height: 30px;

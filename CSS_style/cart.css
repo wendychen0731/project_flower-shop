@@ -141,12 +141,6 @@ main>h2:first-child{
     border-radius: 10px ;
 }
 
-button.decrease>img,
-button.increase>img{
-   width: 50px;
-   height: 50px;
-}
-
  .item_unitprice{
     text-align: right;
     width: 100px;
@@ -185,11 +179,6 @@ button.increase>img{
    .item>div:first-child{
       width: 300px;
    }
-
-   .btn_group{
-      width: 300px;
-   }
-
    .decrease>img,
    .increase>img{
       width: 40px;
@@ -214,6 +203,20 @@ button.increase>img{
       margin-right: 5px;
 
    }
+
+   .decrease, .increase{
+      width: 40px;
+      border-radius: 0px;
+   }
+   
+   .decrease>img, .increase>img {
+      width: 30px;
+
+   }
+
+   .btn_group{
+      width: 120px;
+   }
    .btn_group>input{
 
       border-radius: 5px;
@@ -221,13 +224,8 @@ button.increase>img{
       line-height: 25px;
    }
 
-   .decrease>img,
-   .increase>img{
-      transform: scale(0.8);
-   }
-
    .cancel, .cancel>img{
-      transform: scale(0.6);
+      width: 30px;
       margin: 0;
    }
 
@@ -281,7 +279,9 @@ button.increase>img{
  }
 
  .info_block>p{
-    background-color: #FFCD84;
+    /* background-color: #FFCD84; */
+    color: #317331;
+    font-weight: bold;
     text-align: center;
     border-radius: 5px;
     width: 250px;
@@ -300,7 +300,8 @@ button.increase>img{
  }
 
  .receiver_label{
-    background-color: #FFCD84;
+   color: #317331;
+   font-weight: bold;
     text-align: center;
     border-radius: 5px;
     width: 250px;
@@ -313,11 +314,12 @@ button.increase>img{
 
  .receiver_block>button{
     width: 500px;
-    height: 60px;
+    height: 50px;
     align-self: center;
     color: #317331;
     border: 2px solid #317331;
     background-color: rgba(0,0,0,0);
+    margin-top: 20px;
 
  }
 
@@ -338,7 +340,8 @@ button.increase>img{
 
  .order_amount{
     width: 100%;
-    background-color: #FFCD84;
+    color: #317331;
+    font-weight: bold;
     padding-left: 30px;
     font-weight: bold;
     border-radius: 10px;
@@ -349,8 +352,9 @@ button.increase>img{
  .info_right>button{
    background-color: #317331;
     color: #fff;
-    height: 60px;
+    height: 50px;
     width: 100%;
+    margin-top: 20px;
  }
 
  @media(max-width:768px){
@@ -405,4 +409,11 @@ button.increase>img{
       width: 100px;
       margin-right: 40px;
    }
+
+   .receiver_block>button,
+   .info_right>button{
+      font-size: 18px;
+      border-radius: 10px;
+      height: 50px;
+}
 }
