@@ -119,6 +119,11 @@ main>h2:first-child{
    justify-content: center;
 }
 
+.decrease>img,
+   .increase>img{
+      width: 40px;
+   }
+
 .cancel,
  .cancel img{
    transform: scale(0.8);
@@ -178,10 +183,6 @@ main>h2:first-child{
 
    .item>div:first-child{
       width: 300px;
-   }
-   .decrease>img,
-   .increase>img{
-      width: 40px;
    }
  }
 

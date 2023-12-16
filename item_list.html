@@ -19,98 +19,98 @@
 <link href="https://fonts.googleapis.com/css2?family=Klee+One&family=Marck+Script&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="login_container" id="loginBox" style="display:none;">
-        <div class="login_main_area" id="login_main">
-            <div class="login_title">
-                <h2>會員登入</h2>
-                <h3>Login</h3>
+<div class="login_container" id="loginBox" style="display:none;">
+    <div class="login_main_area" id="login_main">
+        <div class="login_title">
+            <h2>會員登入</h2>
+            <h3>Login</h3>
+        </div>
+        <div class="login_block">
+            <div>
+                <p>帳號：</p>
+                <input type="text" placeholder="請輸入會員帳號">
             </div>
-            <div class="login_block">
-                <div>
-                    <p>帳號：</p>
-                    <input type="text" placeholder="請輸入會員帳號">
-                </div>
-                <div>
-                    <p>密碼：</p>
-                    <input type="password" placeholder="請輸入密碼">
-                </div>
-                <a href="#"><span>忘記密碼?</span></a>
+            <div>
+                <p>密碼：</p>
+                <input type="password" placeholder="請輸入密碼">
             </div>
-            <div class="login_btn">
-                <a href="#" class="signup">
-                    <span>會員註冊</span>
-                </a>
-                <button class="member_login">登入</button>
-                <button class="member_cancel" id="cancelBtn">取消</button>
-            </div>
+            <a href="#"><span>忘記密碼?</span></a>
+        </div>
+        <div class="login_btn">
+            <a href="#" class="signup">
+                <span>會員註冊</span>
+            </a>
+            <button class="member_login">登入</button>
+            <button class="member_cancel" id="cancelBtn">取消</button>
         </div>
     </div>
+</div>
+<header>
+    <!-- 導覽列 -->
+    <nav  id="header">
 
-    <header>
-<!-- 導覽列 -->
-<nav  id="header">
-
-    <div class="mynav">
-        <div class="logo">
-            <a href="./index.html"><img src="./photos/icon/logo.png" alt="logo"></a>
-        </div>
-        <input type="checkbox" id="nav_list">
-        <ul class="nav_ul">
-            <li class="mynav_list">
-                <a href="./item_list.html" >
-                    商品列表
-                <ul class="item_drop">
-                    <li>
-                        <a href="./item_list.html">
-                            花束
-                        </a>
-                    </li>                            
-                    <li>
-                        <a href="./item_list.html">
-                            盆花
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./item_list.html">
-                            永生花
-                        </a>
-                    </li>
-                </ul>
-            </a>
-            </li>
-            
-            <li class="mynav_list">
-                <a href="./class.html" >
-                    花藝課程
+        <div class="mynav">
+            <div class="logo">
+                <a href="./index.html"><img src="./photos/icon/logo.png" alt="logo"></a>
+            </div>
+            <input type="checkbox" id="nav_list">
+            <ul class="nav_ul">
+                <li class="mynav_list">
+                    <a href="./item_list.html" >
+                        商品列表
+                    <ul class="item_drop">
+                        <li>
+                            <a href="./item_list.html">
+                                花束
+                            </a>
+                        </li>                            
+                        <li>
+                            <a href="./item_list.html">
+                                盆花
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./item_list.html">
+                                永生花
+                            </a>
+                        </li>
+                    </ul>
                 </a>
-            </li>
+                </li>
+                
+                <li class="mynav_list">
+                    <a href="./class.html" >
+                        花藝課程
+                    </a>
+                </li>
+                <li class="mynav_list">
+                    <a href="./flowers_knowledge.html">
+                        花藝百科
+                    </a>
+                </li>
             <li class="mynav_list">
-                <a href="./flowers_knowledge.html">
-                    花藝百科
+                    <a href="./flowers_introduce.html" >
+                        常見花材
+                    </a>
+                </li>
+            </ul>
+            <div class="mynav_icon">
+                <a href="./cart.html" class="mynav_cart">
+                    <img src="./photos/icon/icon_cart.png">
                 </a>
-            </li>
-        <li class="mynav_list">
-                <a href="./flowers_introduce.html" >
-                    常見花材
+                <a href="#" class="mynav_question">
+                    <img src="./photos/icon/icon_question.png">
                 </a>
-            </li>
-        </ul>
-        <div class="mynav_icon">
-            <a href="./cart.html" class="mynav_cart">
-                <img src="./photos/icon/icon_cart.png">
-            </a>
-            <a href="#" class="mynav_question">
-                <img src="./photos/icon/icon_question.png">
-            </a>
-            <label for="member" class="mynav_member" id="login_icon" >
-                <img src="./photos/icon/icon_member.png">
+                <label for="member" class="mynav_member" id="login_icon" >
+                    <img src="./photos/icon/icon_member.png">
+                </label>
+            </div>
+            <label id="navList" for="nav_list">
+                <span></span><span></span><span></span>
             </label>
         </div>
-        <label id="navList">
-            <img src="./photos/icon/icon_list.png" alt="">
-        </label>
-    </div>
-</nav>
+    </nav>
+    
 </header>
 <main>
     <div class="title">

@@ -127,8 +127,8 @@ body{
     .banner_sun{
         width: 100px;
         height: 100px;
-        top: 30px;
-        left:-40px;
+        top: 0px;
+        left:-15px;
     }
 
     .banner_sun>div:first-child{     
@@ -753,7 +753,7 @@ body{
 
 }
 .news_main{
-    width: 1200px;
+    width: 100%;
     display:flex;
     justify-content: space-between;
     margin-top: 20px;
@@ -766,7 +766,6 @@ body{
 }
 
 .news_block img{
-    margin: 0 auto;
     width: 380px;
     height: 300px;
     background-size: cover;
@@ -775,7 +774,6 @@ body{
 }
 
 .news_block h3{
-    width: 400px;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;

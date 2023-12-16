@@ -50,11 +50,6 @@ ul.target, .class_right ul{
     
 }
 
-ul.target>li, .class_right ul>li{
-    text-indent: 2em;    
-}
-
-
 .target li::before, .class_right li::before{
     content: '';
     width: 30px;
@@ -278,8 +273,9 @@ ul.target>li, .class_right ul>li{
         height: 40px;
         line-height: 40px;
      }
+     ul>li, ul>li::before{
+        text-indent: -2em;
+        margin-left: 1em;
 
-     .class_right>ul{
-        display: none;
      }
  }

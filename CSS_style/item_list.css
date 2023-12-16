@@ -201,10 +201,7 @@ body{
     }
 
     .itemlist_side{
-        width: 100px;
-    }
-    .itemlist_side ul{
-        font-size: 14px;
+        display: none;
     }
 }
 
@@ -276,12 +273,22 @@ body{
 
 @media(max-width:440px){
 
-    .itemlist_main{
-        width: 300px;
-    }
+
     .itemlist_main>a:nth-child(even){
-        margin-left: 0px;
+        margin-left: 15px;
     }
+
+    
+    .itemlist_main{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .itemlist_block img{
+        width: 180px;
+        height: 245px;
+    }
+
 }
 
 /* 頁碼區塊 */
