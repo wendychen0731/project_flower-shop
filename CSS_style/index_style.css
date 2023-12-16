@@ -127,8 +127,8 @@ body{
     .banner_sun{
         width: 100px;
         height: 100px;
-        top: 0px;
-        left:-15px;
+        top: 10px;
+        left:-5px;
     }
 
     .banner_sun>div:first-child{     
