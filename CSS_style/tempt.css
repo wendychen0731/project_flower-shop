@@ -272,6 +272,7 @@ input#nav_list:checked~#navList>span:nth-child(3){
 
     .mynav>ul{
         flex-direction: column;
+        padding-top: 100px;
         position: absolute;
         top: 82px;
         height: 100vh;
