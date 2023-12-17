@@ -453,7 +453,7 @@ body{
     margin-top: 20px;
     display: flex; 
     justify-content: space-between;
-
+    overflow: hidden;
 }
 
 .producttype_block:nth-child(2){
