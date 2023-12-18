@@ -426,7 +426,15 @@ body{
 
 }
 
-@media(max-width:440px){}
+@media(max-width:440px){
+    .aboutus_text>h3{
+        display: none;
+    }
+
+    .aboutus p{
+        width: 180px;
+    }
+}
 
 /* 商品種類 */
 .producttype{
