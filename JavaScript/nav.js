@@ -27,7 +27,9 @@ $(function(){
                 flexDirection: "column",
                 justifyContent: "flex-start",
             })
-
+            $("main").css({
+                overflow: 'hidden',
+            })
         }
     })
 })

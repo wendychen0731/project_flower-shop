@@ -430,18 +430,20 @@ main>h3{
       height: 142px;
    }
 
-
    .otheritem>button>img{
       width: 30px;
-      height: 30px;
+      border-radius: 0px;
+
    }
 }
 @media(max-width: 440px){
    .otheritem{
-      width: 400px;
+      width: 100%;
+      display: flex;
+      align-items: center;
    }
    main>h3{
-      width: 400px;  
+      width: 100%;  
    }
 
    .otheritem_block{
