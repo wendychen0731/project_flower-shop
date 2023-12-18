@@ -9,6 +9,7 @@ window.addEventListener("scroll", function(){
 
 $(function(){
     $("#navList").click(function(){
+        $(".nav_ul").stop(true);
         $(".nav_ul").slideToggle(800);
     })
 

@@ -263,7 +263,6 @@ input#nav_list:checked~#navList>span:nth-child(3){
         justify-content: center;
         height: 50px;
         width: 30px;
-        /* border: 1px solid red;  */
     }
 
     .logo img{
