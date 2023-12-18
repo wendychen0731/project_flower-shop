@@ -72,7 +72,7 @@ function slider(){
 
 
 // 產品介紹照片區塊切換
-let mainWidth = $(".smallpic_block>ul>li").width()+10;
+let mainWidth = $(".smallpic_block>ul>li").width()-5;
 console.log(mainWidth);
 
 let mainLength=$(".smallpic_block>ul>li").length;

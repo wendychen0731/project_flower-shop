@@ -445,12 +445,7 @@ main>h3{
    }
 
    .otheritem_block{
-      width: 350px;
-   }
-
-   .otheritem_block img{
-      width: 80px;
-      height: 80px;
+      width: 300px;
    }
 
    .otheritem h4,.otheritem p{
@@ -462,6 +457,7 @@ main>h3{
    .otheritem_block img{
       width: 75px;
       height: 75px;
+      border-radius: 10px;
    }
 
 
