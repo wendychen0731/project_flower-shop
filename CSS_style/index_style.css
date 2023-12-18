@@ -437,7 +437,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .producttype_main{
